@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 980" width="2000" height="980">
+  <defs>
+    <filter id="paper-grain-2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffdf7" surfaceScale="1.1" result="light">
+        <feDistantLight azimuth="65" elevation="55" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+
+    <filter id="mounted-shadow-2" x="-5%" y="-5%" width="112%" height="114%">
+      <feDropShadow dx="2" dy="8" stdDeviation="12" flood-color="#3c2c19" flood-opacity="0.18" />
+    </filter>
+
+    <linearGradient id="spine-crease-left-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#342410" stop-opacity="0" />
+      <stop offset="75%" stop-color="#342410" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#342410" stop-opacity="0.32" />
+    </linearGradient>
+
+    <linearGradient id="spine-crease-right-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#342410" stop-opacity="0.32" />
+      <stop offset="25%" stop-color="#342410" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#342410" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="stack-edge-left-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d6caa9" />
+      <stop offset="60%" stop-color="#e8dec6" />
+      <stop offset="100%" stop-color="#f2ebd7" />
+    </linearGradient>
+
+    <linearGradient id="stack-edge-right-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f2ebd7" />
+      <stop offset="40%" stop-color="#e8dec6" />
+      <stop offset="100%" stop-color="#d6caa9" />
+    </linearGradient>
+
+    <linearGradient id="resort-pool-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b26" />
+      <stop offset="60%" stop-color="#1b423a" />
+      <stop offset="100%" stop-color="#122b26" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .serif-display { font-family: "Instrument Serif", Georgia, serif; }
+    .serif-body { font-family: "Newsreader", "Times New Roman", Georgia, serif; }
+    .mono-caps { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: 0.18em; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  </style>
+
+  <!-- Physical Stacked Page Block Depth -->
+  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-2)" opacity="0.9" />
+  <line x1="28" y1="48" x2="28" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="34" y1="42" x2="34" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="40" y1="36" x2="40" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+
+  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-2)" opacity="0.9" />
+  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Left Open Page Surface -->
+  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#fbf7ee" />
+
+  <!-- Right Open Page Surface -->
+  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#fdf9f2" />
+
+  <rect x="42" y="26" width="1916" height="928" fill="#fcf8f0" opacity="0.15" filter="url(#paper-grain-2)" />
+
+  <!-- Spine Shading -->
+  <rect x="860" y="34" width="140" height="912" fill="url(#spine-crease-left-2)" />
+  <rect x="1000" y="34" width="140" height="912" fill="url(#spine-crease-right-2)" />
+  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#322212" stroke-opacity="0.32" stroke-width="1.8" />
+
+  <circle cx="1000" cy="140" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="320" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="510" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="700" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="860" r="2.8" fill="#25170b" opacity="0.65" />
+
+  <!-- ================= LEFT SPREAD ================= -->
+  <g transform="translate(100, 75)">
+    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" font-weight="600">PLATE II · INTERACTIVE EXPERIENCE</text>
+    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" text-anchor="end">IMMERSIVE WEB · 2025</text>
+    <line x1="0" y1="38" x2="760" y2="38" stroke="#2b2721" stroke-opacity="0.14" stroke-width="1" />
+
+    <text x="0" y="98" class="serif-display" font-size="52" fill="#241f1a" letter-spacing="-0.01em">Casa Ananda</text>
+    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#2e6347">Luxury Eco-Resort &amp; Hospitality Sanctuary</text>
+
+    <g transform="translate(0, 162)">
+      <rect x="0" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="42" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Next.js 16</text>
+      <rect x="92" y="0" width="76" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="130" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">GSAP 3</text>
+      <rect x="176" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="218" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Lenis Scroll</text>
+      <rect x="268" y="0" width="94" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="315" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">TypeScript</text>
+      <rect x="370" y="0" width="112" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="426" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Canvas Motion</text>
+    </g>
+
+    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#2d2822">
+      <text x="0" y="0" line-height="1.65">A cinematic digital experience for Casa Ananda, a luxury coastal sanctuary in Kerala.</text>
+      <text x="0" y="30">Designed to evoke tranquility through smooth inertial scrolling, organic typography,</text>
+      <text x="0" y="60">and immersive parallax transitions. Built on Next.js 16 with GSAP ScrollTrigger and Lenis</text>
+      <text x="0" y="90">for butter-smooth 60fps pacing and tactile cursor reactivity.</text>
+    </g>
+
+    <line x1="0" y1="365" x2="760" y2="365" stroke="#2b2721" stroke-opacity="0.1" stroke-width="1" />
+
+    <g transform="translate(0, 400)">
+      <text x="0" y="0" class="mono-caps" font-size="11" fill="#8c775f" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
+
+      <g transform="translate(0, 28)">
+        <circle cx="5" cy="8" r="3" fill="#2e6347" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Inertial Smooth Scroll Architecture</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Synchronized Lenis virtual scroll engine with GSAP 3 timeline scrubbing.</text>
+      </g>
+
+      <g transform="translate(0, 88)">
+        <circle cx="5" cy="8" r="3" fill="#2e6347" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Multi-Layer Architectural Parallax</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Layered imagery depths reacting smoothly to scroll position and device orientation.</text>
+      </g>
+
+      <g transform="translate(0, 148)">
+        <circle cx="5" cy="8" r="3" fill="#2e6347" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Tactile Reservation Booking Flow</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Interactive suite previews with calendar range picking and real-time availability.</text>
+      </g>
+    </g>
+
+    <g transform="translate(0, 700)">
+      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#b03e33" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
+      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#b03e33" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
+      <text x="82" y="42" class="mono-caps" font-size="8" fill="#b03e33" text-anchor="middle">FULL STACK VERIFIED</text>
+
+      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#66594b">Crafted with Next.js 16, GSAP &amp; Lenis</text>
+      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#887866">github.com/achuasokan</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT SPREAD ================= -->
+  <g transform="translate(1080, 75)">
+    <g filter="url(#mounted-shadow-2)">
+      <rect x="0" y="0" width="770" height="740" rx="8" fill="#13231f" />
+      <rect x="0" y="0" width="770" height="38" rx="8" fill="#1c332e" />
+      <circle cx="20" cy="19" r="5" fill="#ff5f56" />
+      <circle cx="36" cy="19" r="5" fill="#ffbd2e" />
+      <circle cx="52" cy="19" r="5" fill="#27c93f" />
+
+      <rect x="80" y="7" width="500" height="24" rx="4" fill="#0d1815" stroke="#25443c" stroke-width="1" />
+      <text x="96" y="23" class="mono-caps" font-size="9.5" fill="#a4c2b9">https://casananda.resort/experience</text>
+
+      <!-- UI Container -->
+      <g transform="translate(0, 38)">
+        <rect x="0" y="0" width="770" height="702" fill="url(#resort-pool-glow)" />
+
+        <!-- Luxury Resort Header -->
+        <rect x="0" y="0" width="770" height="54" fill="#0c1d1a" opacity="0.9" stroke="#1d3b34" stroke-width="1" />
+        <text x="40" y="34" class="serif-display" font-size="22" fill="#e8dfce" letter-spacing="0.1em">CASA ANANDA</text>
+        <g transform="translate(480, 32)" class="mono-caps" font-size="9" fill="#9bb3aa">
+          <text x="0" y="0">SUITES</text>
+          <text x="70" y="0">SANCTUARY</text>
+          <text x="170" y="0">DINING</text>
+          <text x="235" y="0" fill="#d4af37" font-weight="600">RESERVE</text>
+        </g>
+
+        <!-- Hero Resort Presentation -->
+        <g transform="translate(40, 78)">
+          <text x="0" y="32" class="mono-caps" font-size="10" fill="#a0b8af" letter-spacing="0.22em">SANCTUARY IN MALABAR</text>
+          <text x="0" y="80" class="serif-display" font-size="44" fill="#fdfbf7" line-height="1.1">Where Timeless Nature Meets Architectural Stillness</text>
+
+          <g transform="translate(0, 120)">
+            <rect x="0" y="0" width="420" height="220" rx="6" fill="#142e27" stroke="#234a3f" stroke-width="1" />
+            <!-- Silhouette of Luxury Lagoon Villa -->
+            <path d="M40,160 L140,80 L280,80 L380,160 Z" fill="#0d211c" />
+            <rect x="80" y="110" width="260" height="80" fill="#17362f" />
+            <line x1="80" y1="190" x2="340" y2="190" stroke="#d4af37" stroke-width="2" opacity="0.8" />
+            <!-- Water reflection ripples -->
+            <path d="M60,202 Q120,200 180,202 T300,202 T360,202" fill="none" stroke="#2f6658" stroke-width="1.5" />
+            <text x="210" y="155" class="serif-display" font-size="20" fill="#f4ebd9" text-anchor="middle" font-style="italic">The Lagoon Pavilion</text>
+          </g>
+
+          <!-- Suite Cards Row -->
+          <g transform="translate(0, 360)">
+            <g transform="translate(0, 0)">
+              <rect x="0" y="0" width="220" height="110" rx="4" fill="#0e231e" stroke="#1d4239" stroke-width="1" />
+              <text x="16" y="32" class="serif-display" font-size="18" fill="#f4ebd9">Private Pool Villa</text>
+              <text x="16" y="54" class="sans" font-size="11" fill="#8ca89e">1,850 sq ft · Plunge Pool</text>
+              <text x="16" y="86" class="mono-caps" font-size="11" fill="#d4af37">FROM $650 / NIGHT</text>
+            </g>
+            <g transform="translate(240, 0)">
+              <rect x="0" y="0" width="220" height="110" rx="4" fill="#0e231e" stroke="#1d4239" stroke-width="1" />
+              <text x="16" y="32" class="serif-display" font-size="18" fill="#f4ebd9">Ocean Cliff Suite</text>
+              <text x="16" y="54" class="sans" font-size="11" fill="#8ca89e">2,200 sq ft · Sunset Deck</text>
+              <text x="16" y="86" class="mono-caps" font-size="11" fill="#d4af37">FROM $820 / NIGHT</text>
+            </g>
+            <g transform="translate(480, 0)">
+              <rect x="0" y="0" width="200" height="110" rx="4" fill="#0e231e" stroke="#1d4239" stroke-width="1" />
+              <text x="16" y="32" class="serif-display" font-size="18" fill="#f4ebd9">Ayurvedic Sanctuary</text>
+              <text x="16" y="54" class="sans" font-size="11" fill="#8ca89e">Holistic Wellness</text>
+              <text x="16" y="86" class="mono-caps" font-size="11" fill="#d4af37">EXPLORE SPA</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#5c5040" text-anchor="middle">
+      Fig 2.0 — Casa Ananda sanctuary experience with GSAP 3 inertial scroll and parallax depth.
+    </text>
+
+    <!-- Hanko Artist Seal & Date Stamp -->
+    <g transform="translate(710, 785)">
+      <rect x="0" y="0" width="34" height="34" rx="3" fill="#a83c2e" opacity="0.9" />
+      <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#ffffff" stroke-width="1.4" opacity="0.85" />
+      <text x="17" y="48" class="mono-caps" font-size="9" fill="#7a6b5a" text-anchor="middle" font-weight="600">JAN 2025</text>
+    </g>
+  </g>
+</svg>

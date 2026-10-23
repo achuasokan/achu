@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 980" width="2000" height="980">
+  <defs>
+    <!-- Paper texture & organic shadows -->
+    <filter id="paper-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffdf7" surfaceScale="1.1" result="light">
+        <feDistantLight azimuth="65" elevation="55" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+
+    <filter id="mounted-shadow" x="-5%" y="-5%" width="112%" height="114%">
+      <feDropShadow dx="2" dy="8" stdDeviation="12" flood-color="#3c2c19" flood-opacity="0.18" />
+    </filter>
+
+    <linearGradient id="spine-crease-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#342410" stop-opacity="0" />
+      <stop offset="75%" stop-color="#342410" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#342410" stop-opacity="0.32" />
+    </linearGradient>
+
+    <linearGradient id="spine-crease-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#342410" stop-opacity="0.32" />
+      <stop offset="25%" stop-color="#342410" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#342410" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="stack-edge-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d6caa9" />
+      <stop offset="60%" stop-color="#e8dec6" />
+      <stop offset="100%" stop-color="#f2ebd7" />
+    </linearGradient>
+
+    <linearGradient id="stack-edge-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f2ebd7" />
+      <stop offset="40%" stop-color="#e8dec6" />
+      <stop offset="100%" stop-color="#d6caa9" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .serif-display { font-family: "Instrument Serif", Georgia, serif; }
+    .serif-body { font-family: "Newsreader", "Times New Roman", Georgia, serif; }
+    .mono-caps { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: 0.18em; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  </style>
+
+  <!-- ================= PHYSICAL BOOK STRUCTURE (STACKED PAGES + CURVED OUTLINE) ================= -->
+  <!-- Underlying stacked page block depth (left side) -->
+  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left)" opacity="0.9" />
+  <line x1="28" y1="48" x2="28" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="34" y1="42" x2="34" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="40" y1="36" x2="40" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Underlying stacked page block depth (right side) -->
+  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right)" opacity="0.9" />
+  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Left Open Page Surface (Curved Top & Bottom, Rounded Left Corners) -->
+  <path d="M 64 26
+           C 50 26, 42 34, 42 50
+           L 42 930
+           C 42 946, 50 954, 64 954
+           C 340 952, 700 948, 1000 944
+           L 1000 36
+           C 700 32, 340 28, 64 26 Z"
+        fill="#fbf7ee" />
+
+  <!-- Right Open Page Surface (Curved Top & Bottom, Rounded Right Corners) -->
+  <path d="M 1000 36
+           C 1300 32, 1660 28, 1936 26
+           C 1950 26, 1958 34, 1958 50
+           L 1958 930
+           C 1958 946, 1950 954, 1936 954
+           C 1660 952, 1300 948, 1000 944 Z"
+        fill="#fdf9f2" />
+
+  <!-- Paper Surface Texture Grain Overlay -->
+  <rect x="42" y="26" width="1916" height="928" fill="#fcf8f0" opacity="0.15" filter="url(#paper-grain)" />
+
+  <!-- Gutter Crease & Center Valley Shading -->
+  <rect x="860" y="34" width="140" height="912" fill="url(#spine-crease-left)" />
+  <rect x="1000" y="34" width="140" height="912" fill="url(#spine-crease-right)" />
+  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#322212" stroke-opacity="0.32" stroke-width="1.8" />
+
+  <!-- Stitched Thread Holes along Spine Seam -->
+  <circle cx="1000" cy="140" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="320" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="510" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="700" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="860" r="2.8" fill="#25170b" opacity="0.65" />
+
+  <!-- ================= LEFT SPREAD: EDITORIAL SYSTEM SPECIFICATION ================= -->
+  <g transform="translate(100, 75)">
+    <!-- Header strip -->
+    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" font-weight="600">PLATE I · SELECTED ARCHITECTURE</text>
+    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" text-anchor="end">PRODUCTION SYSTEM · 2025</text>
+    <line x1="0" y1="38" x2="760" y2="38" stroke="#2b2721" stroke-opacity="0.14" stroke-width="1" />
+
+    <!-- Project Title -->
+    <text x="0" y="98" class="serif-display" font-size="52" fill="#241f1a" letter-spacing="-0.01em">Spark Dating</text>
+    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#e14d68">Real-time Connection &amp; Matchmaking Engine</text>
+
+    <!-- Tech Stack Badge Strip -->
+    <g transform="translate(0, 162)">
+      <rect x="0" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="42" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Next.js 16</text>
+      <rect x="92" y="0" width="76" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="130" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">React 19</text>
+      <rect x="176" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="218" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Socket.IO</text>
+      <rect x="268" y="0" width="108" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="322" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Redux Toolkit</text>
+      <rect x="384" y="0" width="94" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
+      <text x="431" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">TailwindCSS</text>
+    </g>
+
+    <!-- Narrative Description -->
+    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#2d2822">
+      <text x="0" y="0" line-height="1.65">Spark is a modern, high-concurrency matchmaking platform engineered for instant</text>
+      <text x="0" y="30">sub-50ms message delivery, interactive profile discovery, and real-time user presence.</text>
+      <text x="0" y="60">Built on Next.js 16 App Router and React 19, the interface provides a frictionless</text>
+      <text x="0" y="90">experience with fluid Framer Motion transitions and persistent dark aesthetics.</text>
+    </g>
+
+    <line x1="0" y1="365" x2="760" y2="365" stroke="#2b2721" stroke-opacity="0.1" stroke-width="1" />
+
+    <!-- Architectural Highlights -->
+    <g transform="translate(0, 400)">
+      <text x="0" y="0" class="mono-caps" font-size="11" fill="#8c775f" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
+
+      <g transform="translate(0, 28)">
+        <circle cx="5" cy="8" r="3" fill="#e14d68" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Full-Duplex Socket.IO Live Communication</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Instant bidirectional events for typing indicators, read receipts, and live matches.</text>
+      </g>
+
+      <g transform="translate(0, 88)">
+        <circle cx="5" cy="8" r="3" fill="#e14d68" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Redux Toolkit Normalized State Cache</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Synchronized client cache for user profiles, conversations, and online presence.</text>
+      </g>
+
+      <g transform="translate(0, 148)">
+        <circle cx="5" cy="8" r="3" fill="#e14d68" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">OAuth &amp; Multi-Factor Authentication</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Secure JWT session storage, validation schemas with Zod and React Hook Form.</text>
+      </g>
+    </g>
+
+    <!-- Red Seal / Verification Stamp -->
+    <g transform="translate(0, 700)">
+      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#b03e33" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
+      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#b03e33" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
+      <text x="82" y="42" class="mono-caps" font-size="8" fill="#b03e33" text-anchor="middle">FULL STACK VERIFIED</text>
+
+      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#66594b">Crafted with Next.js 16, TypeScript, &amp; GSAP</text>
+      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#887866">github.com/achuasokan</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT SPREAD: REAL WORK SHOWCASE ================= -->
+  <g transform="translate(1080, 75)">
+    <!-- Browser Window Card Container -->
+    <g filter="url(#mounted-shadow)">
+      <rect x="0" y="0" width="770" height="740" rx="8" fill="#141417" />
+      <rect x="0" y="0" width="770" height="38" rx="8" fill="#1e1e24" />
+      <!-- Traffic Light Controls -->
+      <circle cx="20" cy="19" r="5" fill="#ff5f56" />
+      <circle cx="36" cy="19" r="5" fill="#ffbd2e" />
+      <circle cx="52" cy="19" r="5" fill="#27c93f" />
+
+      <!-- URL Address Pill -->
+      <rect x="80" y="7" width="500" height="24" rx="4" fill="#0d0d10" stroke="#2c2c36" stroke-width="1" />
+      <text x="96" y="23" class="mono-caps" font-size="9.5" fill="#9e9ea8">https://spark-dating.app/home</text>
+
+      <!-- Spark Live UI Content -->
+      <g transform="translate(0, 38)">
+        <!-- Top App Navbar -->
+        <rect x="0" y="0" width="770" height="52" fill="#18181f" stroke="#262632" stroke-width="1" />
+        <!-- Flame Icon -->
+        <circle cx="34" cy="26" r="13" fill="#e14d68" />
+        <path d="M34,18 C37,22 39,25 37,29 C36,31 33,32 31,30 C30,28 31,26 33,25 C33,23 32,21 34,18 Z" fill="#ffffff" />
+        <text x="58" y="32" class="sans" font-size="17" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">Spark</text>
+
+        <g transform="translate(560, 26)" class="sans" font-size="12" fill="#a0a0b2">
+          <text x="0" y="5">Explore</text>
+          <text x="65" y="5">Matches</text>
+          <text x="135" y="5" fill="#e14d68" font-weight="600">Messages (3)</text>
+        </g>
+
+        <!-- Main Dashboard View -->
+        <g transform="translate(36, 32)">
+          <!-- Headline -->
+          <text x="0" y="24" class="sans" font-size="26" font-weight="700" fill="#ffffff">Find Your Perfect Match</text>
+          <text x="0" y="48" class="sans" font-size="12" fill="#888899">Discover amazing people near you and create meaningful connections.</text>
+
+          <!-- Start Matching Button -->
+          <rect x="0" y="68" width="130" height="34" rx="6" fill="#e14d68" />
+          <text x="65" y="89" class="sans" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">Start Matching</text>
+
+          <!-- Featured Matches Carousel Section -->
+          <text x="0" y="142" class="sans" font-size="14" font-weight="600" fill="#ffffff">Featured Matches</text>
+          <text x="698" y="142" class="sans" font-size="11" fill="#e14d68" text-anchor="end">VIEW ALL (260+)</text>
+
+          <!-- Profile Cards Grid (Row 1) -->
+          <g transform="translate(0, 160)">
+            <!-- Card 1: Sophia -->
+            <g transform="translate(0, 0)">
+              <rect x="0" y="0" width="124" height="150" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="54" r="34" fill="#322d42" />
+              <circle cx="88" cy="78" r="5" fill="#10b981" stroke="#20202b" stroke-width="1.5" />
+              <text x="62" y="112" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Sophia, 24</text>
+              <rect x="22" y="122" width="80" height="16" rx="4" fill="#e14d68" opacity="0.2" />
+              <text x="62" y="133" class="mono-caps" font-size="7.5" fill="#e14d68" text-anchor="middle" font-weight="700">96% MATCH</text>
+            </g>
+
+            <!-- Card 2: Emma -->
+            <g transform="translate(144, 0)">
+              <rect x="0" y="0" width="124" height="150" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="54" r="34" fill="#2a3848" />
+              <circle cx="88" cy="78" r="5" fill="#10b981" stroke="#20202b" stroke-width="1.5" />
+              <text x="62" y="112" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Emma, 22</text>
+              <rect x="22" y="122" width="80" height="16" rx="4" fill="#e14d68" opacity="0.2" />
+              <text x="62" y="133" class="mono-caps" font-size="7.5" fill="#e14d68" text-anchor="middle" font-weight="700">NEW MATCH</text>
+            </g>
+
+            <!-- Card 3: Charu -->
+            <g transform="translate(288, 0)">
+              <rect x="0" y="0" width="124" height="150" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="54" r="34" fill="#2a423b" />
+              <circle cx="88" cy="78" r="5" fill="#10b981" stroke="#20202b" stroke-width="1.5" />
+              <text x="62" y="112" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Charu, 23</text>
+              <rect x="22" y="122" width="80" height="16" rx="4" fill="#3b3b4f" />
+              <text x="62" y="133" class="mono-caps" font-size="7.5" fill="#a0a0b8" text-anchor="middle">ONLINE</text>
+            </g>
+
+            <!-- Card 4: Meenakshi -->
+            <g transform="translate(432, 0)">
+              <rect x="0" y="0" width="124" height="150" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="54" r="34" fill="#3c2f2d" />
+              <circle cx="88" cy="78" r="5" fill="#f59e0b" stroke="#20202b" stroke-width="1.5" />
+              <text x="62" y="112" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Meenakshi</text>
+              <rect x="22" y="122" width="80" height="16" rx="4" fill="#3b3b4f" />
+              <text x="62" y="133" class="mono-caps" font-size="7.5" fill="#a0a0b8" text-anchor="middle">2M AGO</text>
+            </g>
+
+            <!-- Card 5: Mrud -->
+            <g transform="translate(576, 0)">
+              <rect x="0" y="0" width="124" height="150" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="54" r="34" fill="#323348" />
+              <circle cx="88" cy="78" r="5" fill="#10b981" stroke="#20202b" stroke-width="1.5" />
+              <text x="62" y="112" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Mrud, 26</text>
+              <rect x="22" y="122" width="80" height="16" rx="4" fill="#3b3b4f" />
+              <text x="62" y="133" class="mono-caps" font-size="7.5" fill="#a0a0b8" text-anchor="middle">ONLINE</text>
+            </g>
+          </g>
+
+          <!-- Profile Cards Grid (Row 2) -->
+          <g transform="translate(0, 330)">
+            <!-- Card 6 -->
+            <g transform="translate(0, 0)">
+              <rect x="0" y="0" width="124" height="135" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="48" r="30" fill="#3e2d3b" />
+              <text x="62" y="100" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Kavya, 23</text>
+              <text x="62" y="118" class="mono-caps" font-size="7.5" fill="#10b981" text-anchor="middle">VERIFIED</text>
+            </g>
+            <!-- Card 7 -->
+            <g transform="translate(144, 0)">
+              <rect x="0" y="0" width="124" height="135" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="48" r="30" fill="#2d3d3d" />
+              <text x="62" y="100" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Aisha, 25</text>
+              <text x="62" y="118" class="mono-caps" font-size="7.5" fill="#10b981" text-anchor="middle">VERIFIED</text>
+            </g>
+            <!-- Card 8 -->
+            <g transform="translate(288, 0)">
+              <rect x="0" y="0" width="124" height="135" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="48" r="30" fill="#443a2b" />
+              <text x="62" y="100" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Nisha, 21</text>
+              <text x="62" y="118" class="mono-caps" font-size="7.5" fill="#a0a0b8" text-anchor="middle">ACTIVE</text>
+            </g>
+            <!-- Card 9 -->
+            <g transform="translate(432, 0)">
+              <rect x="0" y="0" width="124" height="135" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="48" r="30" fill="#2d3648" />
+              <text x="62" y="100" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Divya, 24</text>
+              <text x="62" y="118" class="mono-caps" font-size="7.5" fill="#10b981" text-anchor="middle">VERIFIED</text>
+            </g>
+            <!-- Card 10 -->
+            <g transform="translate(576, 0)">
+              <rect x="0" y="0" width="124" height="135" rx="8" fill="#20202b" stroke="#2d2d3e" stroke-width="1" />
+              <circle cx="62" cy="48" r="30" fill="#323348" />
+              <text x="62" y="100" class="sans" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Arya, 27</text>
+              <text x="62" y="118" class="mono-caps" font-size="7.5" fill="#a0a0b8" text-anchor="middle">ONLINE</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Figure Caption -->
+    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#5c5040" text-anchor="middle">
+      Fig 1.0 — Spark homepage &amp; matchmaking engine with real-time Socket.IO communication.
+    </text>
+
+    <!-- Hanko Artist Seal & Date Stamp (Matching Photo) -->
+    <g transform="translate(710, 785)">
+      <rect x="0" y="0" width="34" height="34" rx="3" fill="#a83c2e" opacity="0.9" />
+      <!-- Stylized Kanji/Monogram Seal -->
+      <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#ffffff" stroke-width="1.4" opacity="0.85" />
+      <text x="17" y="48" class="mono-caps" font-size="9" fill="#7a6b5a" text-anchor="middle" font-weight="600">FEB 2025</text>
+    </g>
+  </g>
+</svg>
