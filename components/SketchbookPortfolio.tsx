@@ -23,22 +23,16 @@ const PAGES: PageData[] = [
     tag: "Interactive Web Experience · 2025",
   },
   {
-    file: "/plates/plate3-youtube.svg",
-    title: "YouTube Video Streaming Client",
-    place: "React · REST APIs · Media Player",
-    tag: "React Web Application · 2024",
+    file: "/plates/plate3-tvtrac.svg",
+    title: "TVTrac — Entertainment Tracking Engine",
+    place: "Next.js 16 · TMDB API · Redux",
+    tag: "Production System · 2025",
   },
   {
-    file: "/plates/plate4-tesla.svg",
-    title: "Tesla Automotive Digital Showroom",
-    place: "HTML5 · CSS3 · Responsive UI Craft",
-    tag: "Editorial Web Platform · 2024",
-  },
-  {
-    file: "/plates/plate5-techno.svg",
-    title: "Techno-Web Digital Architecture Hub",
-    place: "Clean Architecture · Node.js · Systems",
-    tag: "Full Stack Architecture · 2024",
+    file: "/plates/plate4-comix.svg",
+    title: "Comix — Digital Comic & Manga Reader",
+    place: "React 19 · HTML5 Canvas · WebGL",
+    tag: "Interactive Web Application · 2025",
   },
 ];
 
@@ -566,8 +560,9 @@ export default function SketchbookPortfolio() {
           Achu Asokan
         </a>
         <nav>
-          <a href="#plates">Journal</a>
           <a href="#about">About</a>
+          <a href="#sketchbook">Sketchbook</a>
+          <a href="#plates">Plates</a>
           <a href="#contact">Contact</a>
           <div className="top-socials">
             {/* GitHub */}
@@ -605,8 +600,89 @@ export default function SketchbookPortfolio() {
         </nav>
       </header>
 
-      {/* Main Hero & Tactile Sketchbook */}
-      <section id="sketchbook" className="hero">
+      {/* 1. Intro & About Section (Placed First) */}
+      <section id="about" className="intro-about">
+        <p className="hero-kicker">Full Stack Developer / Software Engineer / Next.js &amp; MERN @ Kerala</p>
+
+        <div className="about-wrap">
+          <div className="about-content">
+            <p className="section-label">A B O U T</p>
+            <p className="bio">
+              Achu Asokan is a full-stack engineer and web craftsman based in Kerala, India. Specializing
+              in high-performance web applications, real-time architectures, and interactive digital
+              experiences, he builds across{" "}
+              <a className="bio-link" href="#plates">
+                Next.js 16, React 19, TypeScript, Node.js, and MongoDB
+              </a>
+              . From responsive real-time platforms like{" "}
+              <a
+                className="bio-link"
+                href="#sketchbook"
+                onClick={(e) => {
+                  e.preventDefault();
+                  goTo(0);
+                  document.getElementById("sketchbook")?.scrollIntoView({ behavior: "smooth", block: "center" });
+                }}
+              >
+                Spark
+              </a>{" "}
+              to immersive cinematic sites like{" "}
+              <a
+                className="bio-link"
+                href="#sketchbook"
+                onClick={(e) => {
+                  e.preventDefault();
+                  goTo(1);
+                  document.getElementById("sketchbook")?.scrollIntoView({ behavior: "smooth", block: "center" });
+                }}
+              >
+                Casa Ananda
+              </a>
+              , his work lives on the seam between technical rigor and visual craft: building software
+              that feels alive, tactile, and thoughtfully engineered. The interactive sketchbook below captures selected
+              architectural plates and production interfaces looked at up close.
+            </p>
+          </div>
+          <div className="bloom-container">
+            <img
+              crossOrigin="anonymous"
+              className="bloom"
+              src="https://ublctyddhtbgaersvxxb.supabase.co/storage/v1/object/public/threeui-media/scene-images/339abd2c649a11f725af9114/bloom.png"
+              alt="Botanical watercolor flower"
+            />
+            <div className="bloom-line" aria-hidden="true" />
+          </div>
+        </div>
+
+        {/* Scroll cue down to Sketchbook */}
+        <button
+          type="button"
+          className="hero-down"
+          aria-label="scroll down to sketchbook"
+          onClick={() => {
+            document.getElementById("sketchbook")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+      </section>
+
+      {/* Painted watercolor divider */}
+      <div className="rule" aria-hidden="true" />
+
+      {/* 2. Interactive Tactile Sketchbook (Placed Down / Below) */}
+      <section id="sketchbook" className="hero sketchbook-section">
         <img
           crossOrigin="anonymous"
           className="botany l"
@@ -622,7 +698,9 @@ export default function SketchbookPortfolio() {
           aria-hidden="true"
         />
 
-        <p className="hero-kicker">Full Stack Developer / Software Engineer / Next.js &amp; MERN @ Kerala</p>
+        <div className="sb-header-label">
+          <p className="section-label">A R C H I T E C T U R A L &nbsp; P L A T E S</p>
+        </div>
 
         <div className="sb-wrap" ref={wrapRef}>
           <div
@@ -689,83 +767,6 @@ export default function SketchbookPortfolio() {
           <p className={`sb-hint ${hintGone ? "gone" : ""}`}>
             drag page to turn · use arrow keys or chevron buttons
           </p>
-        </div>
-
-        {/* Scroll cue down to About */}
-        <button
-          type="button"
-          className="hero-down"
-          aria-label="scroll to about section"
-          onClick={() => {
-            document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            width="18"
-            height="18"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m6 9 6 6 6-6" />
-          </svg>
-        </button>
-      </section>
-
-      {/* Painted watercolor divider */}
-      <div className="rule" aria-hidden="true" />
-
-      {/* About Section */}
-      <section id="about" className="about">
-        <div className="about-content">
-          <p className="section-label">A B O U T</p>
-          <p className="bio">
-            Achu Asokan is a full-stack engineer and web craftsman based in Kerala, India. Specializing
-            in high-performance web applications, real-time architectures, and interactive digital
-            experiences, he builds across{" "}
-            <a className="bio-link" href="#plates">
-              Next.js 16, React 19, TypeScript, Node.js, and MongoDB
-            </a>
-            . From responsive real-time platforms like{" "}
-            <a
-              className="bio-link"
-              href="#sketchbook"
-              onClick={(e) => {
-                e.preventDefault();
-                goTo(0);
-                document.getElementById("sketchbook")?.scrollIntoView({ behavior: "smooth", block: "center" });
-              }}
-            >
-              Spark
-            </a>{" "}
-            to immersive cinematic sites like{" "}
-            <a
-              className="bio-link"
-              href="#sketchbook"
-              onClick={(e) => {
-                e.preventDefault();
-                goTo(1);
-                document.getElementById("sketchbook")?.scrollIntoView({ behavior: "smooth", block: "center" });
-              }}
-            >
-              Casa Ananda
-            </a>
-            , his work lives on the seam between technical rigor and visual craft: building software
-            that feels alive, tactile, and thoughtfully engineered. This sketchbook captures selected
-            architectural plates and production interfaces looked at up close.
-          </p>
-        </div>
-        <div className="bloom-container">
-          <img
-            crossOrigin="anonymous"
-            className="bloom"
-            src="https://ublctyddhtbgaersvxxb.supabase.co/storage/v1/object/public/threeui-media/scene-images/339abd2c649a11f725af9114/bloom.png"
-            alt="Botanical watercolor flower"
-          />
-          <div className="bloom-line" aria-hidden="true" />
         </div>
       </section>
 

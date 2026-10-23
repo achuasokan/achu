@@ -13,33 +13,33 @@
     </filter>
 
     <linearGradient id="spine-crease-left-2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0" />
-      <stop offset="75%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0.32" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
     </linearGradient>
 
     <linearGradient id="spine-crease-right-2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0.32" />
-      <stop offset="25%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="stack-edge-left-2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d6caa9" />
-      <stop offset="60%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#f2ebd7" />
+      <stop offset="0%" stop-color="#0e0e13" />
+      <stop offset="60%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#2a2a38" />
     </linearGradient>
 
     <linearGradient id="stack-edge-right-2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f2ebd7" />
-      <stop offset="40%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#d6caa9" />
+      <stop offset="0%" stop-color="#2a2a38" />
+      <stop offset="40%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#0e0e13" />
     </linearGradient>
 
     <linearGradient id="resort-pool-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f2b26" />
-      <stop offset="60%" stop-color="#1b423a" />
-      <stop offset="100%" stop-color="#122b26" />
+      <stop offset="0%" stop-color="#0c231f" />
+      <stop offset="60%" stop-color="#173932" />
+      <stop offset="100%" stop-color="#0f2621" />
     </linearGradient>
   </defs>
 
@@ -51,95 +51,95 @@
   </style>
 
   <!-- Physical Stacked Page Block Depth -->
-  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-2)" opacity="0.9" />
-  <line x1="28" y1="48" x2="28" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="34" y1="42" x2="34" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="40" y1="36" x2="40" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-2)" opacity="0.95" />
+  <line x1="28" y1="48" x2="28" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="34" y1="42" x2="34" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="40" y1="36" x2="40" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
-  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-2)" opacity="0.9" />
-  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-2)" opacity="0.95" />
+  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
   <!-- Left Open Page Surface -->
-  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#fbf7ee" />
+  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#121217" />
 
   <!-- Right Open Page Surface -->
-  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#fdf9f2" />
+  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#15151b" />
 
-  <rect x="42" y="26" width="1916" height="928" fill="#fcf8f0" opacity="0.15" filter="url(#paper-grain-2)" />
+  <rect x="42" y="26" width="1916" height="928" fill="#0b0b0f" opacity="0.12" filter="url(#paper-grain-2)" />
 
   <!-- Spine Shading -->
   <rect x="860" y="34" width="140" height="912" fill="url(#spine-crease-left-2)" />
   <rect x="1000" y="34" width="140" height="912" fill="url(#spine-crease-right-2)" />
-  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#322212" stroke-opacity="0.32" stroke-width="1.8" />
+  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#000000" stroke-opacity="0.6" stroke-width="1.8" />
 
-  <circle cx="1000" cy="140" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="320" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="510" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="700" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="860" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="140" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="320" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="510" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="700" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="860" r="2.8" fill="#050508" opacity="0.9" />
 
   <!-- ================= LEFT SPREAD ================= -->
   <g transform="translate(100, 75)">
-    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" font-weight="600">PLATE II · INTERACTIVE EXPERIENCE</text>
-    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" text-anchor="end">IMMERSIVE WEB · 2025</text>
-    <line x1="0" y1="38" x2="760" y2="38" stroke="#2b2721" stroke-opacity="0.14" stroke-width="1" />
+    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" font-weight="600">PLATE II · INTERACTIVE EXPERIENCE</text>
+    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" text-anchor="end">IMMERSIVE WEB · 2025</text>
+    <line x1="0" y1="38" x2="760" y2="38" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
 
-    <text x="0" y="98" class="serif-display" font-size="52" fill="#241f1a" letter-spacing="-0.01em">Casa Ananda</text>
-    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#2e6347">Luxury Eco-Resort &amp; Hospitality Sanctuary</text>
+    <text x="0" y="98" class="serif-display" font-size="52" fill="#ffffff" letter-spacing="-0.01em">Casa Ananda</text>
+    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#38d38a">Luxury Eco-Resort &amp; Hospitality Sanctuary</text>
 
     <g transform="translate(0, 162)">
-      <rect x="0" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="42" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Next.js 16</text>
-      <rect x="92" y="0" width="76" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="130" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">GSAP 3</text>
-      <rect x="176" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="218" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Lenis Scroll</text>
-      <rect x="268" y="0" width="94" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="315" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">TypeScript</text>
-      <rect x="370" y="0" width="112" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="426" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Canvas Motion</text>
+      <rect x="0" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="42" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Next.js 16</text>
+      <rect x="92" y="0" width="76" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="130" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">GSAP 3</text>
+      <rect x="176" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="218" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Lenis Scroll</text>
+      <rect x="268" y="0" width="94" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="315" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">TypeScript</text>
+      <rect x="370" y="0" width="112" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="426" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Canvas Motion</text>
     </g>
 
-    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#2d2822">
+    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#b8b8c8">
       <text x="0" y="0" line-height="1.65">A cinematic digital experience for Casa Ananda, a luxury coastal sanctuary in Kerala.</text>
       <text x="0" y="30">Designed to evoke tranquility through smooth inertial scrolling, organic typography,</text>
       <text x="0" y="60">and immersive parallax transitions. Built on Next.js 16 with GSAP ScrollTrigger and Lenis</text>
       <text x="0" y="90">for butter-smooth 60fps pacing and tactile cursor reactivity.</text>
     </g>
 
-    <line x1="0" y1="365" x2="760" y2="365" stroke="#2b2721" stroke-opacity="0.1" stroke-width="1" />
+    <line x1="0" y1="365" x2="760" y2="365" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
 
     <g transform="translate(0, 400)">
-      <text x="0" y="0" class="mono-caps" font-size="11" fill="#8c775f" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
+      <text x="0" y="0" class="mono-caps" font-size="11" fill="#dfb776" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
 
       <g transform="translate(0, 28)">
-        <circle cx="5" cy="8" r="3" fill="#2e6347" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Inertial Smooth Scroll Architecture</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Synchronized Lenis virtual scroll engine with GSAP 3 timeline scrubbing.</text>
+        <circle cx="5" cy="8" r="3" fill="#38d38a" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Inertial Smooth Scroll Architecture</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Synchronized Lenis virtual scroll engine with GSAP 3 timeline scrubbing.</text>
       </g>
 
       <g transform="translate(0, 88)">
-        <circle cx="5" cy="8" r="3" fill="#2e6347" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Multi-Layer Architectural Parallax</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Layered imagery depths reacting smoothly to scroll position and device orientation.</text>
+        <circle cx="5" cy="8" r="3" fill="#38d38a" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Multi-Layer Architectural Parallax</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Layered imagery depths reacting smoothly to scroll position and device orientation.</text>
       </g>
 
       <g transform="translate(0, 148)">
-        <circle cx="5" cy="8" r="3" fill="#2e6347" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Tactile Reservation Booking Flow</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Interactive suite previews with calendar range picking and real-time availability.</text>
+        <circle cx="5" cy="8" r="3" fill="#38d38a" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Tactile Reservation Booking Flow</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Interactive suite previews with calendar range picking and real-time availability.</text>
       </g>
     </g>
 
     <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#b03e33" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
-      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#b03e33" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
-      <text x="82" y="42" class="mono-caps" font-size="8" fill="#b03e33" text-anchor="middle">FULL STACK VERIFIED</text>
+      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#dfb776" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
+      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#dfb776" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
+      <text x="82" y="42" class="mono-caps" font-size="8" fill="#dfb776" text-anchor="middle">FULL STACK VERIFIED</text>
 
-      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#66594b">Crafted with Next.js 16, GSAP &amp; Lenis</text>
-      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#887866">github.com/achuasokan</text>
+      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#a0a0b2">Crafted with Next.js 16, GSAP &amp; Lenis</text>
+      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#dfb776" opacity="0.75">github.com/achuasokan</text>
     </g>
   </g>
 
@@ -210,7 +210,7 @@
       </g>
     </g>
 
-    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#5c5040" text-anchor="middle">
+    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#88889a" text-anchor="middle">
       Fig 2.0 — Casa Ananda sanctuary experience with GSAP 3 inertial scroll and parallax depth.
     </text>
 
@@ -218,7 +218,7 @@
     <g transform="translate(710, 785)">
       <rect x="0" y="0" width="34" height="34" rx="3" fill="#a83c2e" opacity="0.9" />
       <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#ffffff" stroke-width="1.4" opacity="0.85" />
-      <text x="17" y="48" class="mono-caps" font-size="9" fill="#7a6b5a" text-anchor="middle" font-weight="600">JAN 2025</text>
+      <text x="17" y="48" class="mono-caps" font-size="9" fill="#c5a880" text-anchor="middle" font-weight="600">JAN 2025</text>
     </g>
   </g>
 </svg>

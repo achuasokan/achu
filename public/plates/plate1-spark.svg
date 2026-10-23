@@ -14,27 +14,27 @@
     </filter>
 
     <linearGradient id="spine-crease-left" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0" />
-      <stop offset="75%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0.32" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
     </linearGradient>
 
     <linearGradient id="spine-crease-right" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0.32" />
-      <stop offset="25%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="stack-edge-left" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d6caa9" />
-      <stop offset="60%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#f2ebd7" />
+      <stop offset="0%" stop-color="#0e0e13" />
+      <stop offset="60%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#2a2a38" />
     </linearGradient>
 
     <linearGradient id="stack-edge-right" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f2ebd7" />
-      <stop offset="40%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#d6caa9" />
+      <stop offset="0%" stop-color="#2a2a38" />
+      <stop offset="40%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#0e0e13" />
     </linearGradient>
   </defs>
 
@@ -47,16 +47,16 @@
 
   <!-- ================= PHYSICAL BOOK STRUCTURE (STACKED PAGES + CURVED OUTLINE) ================= -->
   <!-- Underlying stacked page block depth (left side) -->
-  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left)" opacity="0.9" />
-  <line x1="28" y1="48" x2="28" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="34" y1="42" x2="34" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="40" y1="36" x2="40" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left)" opacity="0.95" />
+  <line x1="28" y1="48" x2="28" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="34" y1="42" x2="34" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="40" y1="36" x2="40" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
   <!-- Underlying stacked page block depth (right side) -->
-  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right)" opacity="0.9" />
-  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right)" opacity="0.95" />
+  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
   <!-- Left Open Page Surface (Curved Top & Bottom, Rounded Left Corners) -->
   <path d="M 64 26
@@ -66,7 +66,7 @@
            C 340 952, 700 948, 1000 944
            L 1000 36
            C 700 32, 340 28, 64 26 Z"
-        fill="#fbf7ee" />
+        fill="#121217" />
 
   <!-- Right Open Page Surface (Curved Top & Bottom, Rounded Right Corners) -->
   <path d="M 1000 36
@@ -75,89 +75,89 @@
            L 1958 930
            C 1958 946, 1950 954, 1936 954
            C 1660 952, 1300 948, 1000 944 Z"
-        fill="#fdf9f2" />
+        fill="#15151b" />
 
   <!-- Paper Surface Texture Grain Overlay -->
-  <rect x="42" y="26" width="1916" height="928" fill="#fcf8f0" opacity="0.15" filter="url(#paper-grain)" />
+  <rect x="42" y="26" width="1916" height="928" fill="#0b0b0f" opacity="0.12" filter="url(#paper-grain)" />
 
   <!-- Gutter Crease & Center Valley Shading -->
   <rect x="860" y="34" width="140" height="912" fill="url(#spine-crease-left)" />
   <rect x="1000" y="34" width="140" height="912" fill="url(#spine-crease-right)" />
-  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#322212" stroke-opacity="0.32" stroke-width="1.8" />
+  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#000000" stroke-opacity="0.6" stroke-width="1.8" />
 
   <!-- Stitched Thread Holes along Spine Seam -->
-  <circle cx="1000" cy="140" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="320" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="510" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="700" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="860" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="140" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="320" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="510" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="700" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="860" r="2.8" fill="#050508" opacity="0.9" />
 
   <!-- ================= LEFT SPREAD: EDITORIAL SYSTEM SPECIFICATION ================= -->
   <g transform="translate(100, 75)">
     <!-- Header strip -->
-    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" font-weight="600">PLATE I · SELECTED ARCHITECTURE</text>
-    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" text-anchor="end">PRODUCTION SYSTEM · 2025</text>
-    <line x1="0" y1="38" x2="760" y2="38" stroke="#2b2721" stroke-opacity="0.14" stroke-width="1" />
+    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" font-weight="600">PLATE I · SELECTED ARCHITECTURE</text>
+    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" text-anchor="end">PRODUCTION SYSTEM · 2025</text>
+    <line x1="0" y1="38" x2="760" y2="38" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
 
     <!-- Project Title -->
-    <text x="0" y="98" class="serif-display" font-size="52" fill="#241f1a" letter-spacing="-0.01em">Spark Dating</text>
-    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#e14d68">Real-time Connection &amp; Matchmaking Engine</text>
+    <text x="0" y="98" class="serif-display" font-size="52" fill="#ffffff" letter-spacing="-0.01em">Spark Dating</text>
+    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#ff5277">Real-time Connection &amp; Matchmaking Engine</text>
 
     <!-- Tech Stack Badge Strip -->
     <g transform="translate(0, 162)">
-      <rect x="0" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="42" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Next.js 16</text>
-      <rect x="92" y="0" width="76" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="130" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">React 19</text>
-      <rect x="176" y="0" width="84" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="218" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Socket.IO</text>
-      <rect x="268" y="0" width="108" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="322" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Redux Toolkit</text>
-      <rect x="384" y="0" width="94" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="431" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">TailwindCSS</text>
+      <rect x="0" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="42" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Next.js 16</text>
+      <rect x="92" y="0" width="76" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="130" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">React 19</text>
+      <rect x="176" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="218" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Socket.IO</text>
+      <rect x="268" y="0" width="108" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="322" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Redux Toolkit</text>
+      <rect x="384" y="0" width="94" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="431" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">TailwindCSS</text>
     </g>
 
     <!-- Narrative Description -->
-    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#2d2822">
+    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#b8b8c8">
       <text x="0" y="0" line-height="1.65">Spark is a modern, high-concurrency matchmaking platform engineered for instant</text>
       <text x="0" y="30">sub-50ms message delivery, interactive profile discovery, and real-time user presence.</text>
       <text x="0" y="60">Built on Next.js 16 App Router and React 19, the interface provides a frictionless</text>
       <text x="0" y="90">experience with fluid Framer Motion transitions and persistent dark aesthetics.</text>
     </g>
 
-    <line x1="0" y1="365" x2="760" y2="365" stroke="#2b2721" stroke-opacity="0.1" stroke-width="1" />
+    <line x1="0" y1="365" x2="760" y2="365" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
 
     <!-- Architectural Highlights -->
     <g transform="translate(0, 400)">
-      <text x="0" y="0" class="mono-caps" font-size="11" fill="#8c775f" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
+      <text x="0" y="0" class="mono-caps" font-size="11" fill="#dfb776" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
 
       <g transform="translate(0, 28)">
-        <circle cx="5" cy="8" r="3" fill="#e14d68" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Full-Duplex Socket.IO Live Communication</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Instant bidirectional events for typing indicators, read receipts, and live matches.</text>
+        <circle cx="5" cy="8" r="3" fill="#ff5277" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Full-Duplex Socket.IO Live Communication</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Instant bidirectional events for typing indicators, read receipts, and live matches.</text>
       </g>
 
       <g transform="translate(0, 88)">
-        <circle cx="5" cy="8" r="3" fill="#e14d68" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Redux Toolkit Normalized State Cache</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Synchronized client cache for user profiles, conversations, and online presence.</text>
+        <circle cx="5" cy="8" r="3" fill="#ff5277" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Redux Toolkit Normalized State Cache</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Synchronized client cache for user profiles, conversations, and online presence.</text>
       </g>
 
       <g transform="translate(0, 148)">
-        <circle cx="5" cy="8" r="3" fill="#e14d68" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">OAuth &amp; Multi-Factor Authentication</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Secure JWT session storage, validation schemas with Zod and React Hook Form.</text>
+        <circle cx="5" cy="8" r="3" fill="#ff5277" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">OAuth &amp; Multi-Factor Authentication</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Secure JWT session storage, validation schemas with Zod and React Hook Form.</text>
       </g>
     </g>
 
-    <!-- Red Seal / Verification Stamp -->
+    <!-- Stamp -->
     <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#b03e33" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
-      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#b03e33" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
-      <text x="82" y="42" class="mono-caps" font-size="8" fill="#b03e33" text-anchor="middle">FULL STACK VERIFIED</text>
+      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#dfb776" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
+      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#dfb776" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
+      <text x="82" y="42" class="mono-caps" font-size="8" fill="#dfb776" text-anchor="middle">FULL STACK VERIFIED</text>
 
-      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#66594b">Crafted with Next.js 16, TypeScript, &amp; GSAP</text>
-      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#887866">github.com/achuasokan</text>
+      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#a0a0b2">Crafted with Next.js 16, TypeScript, &amp; GSAP</text>
+      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#dfb776" opacity="0.75">github.com/achuasokan</text>
     </g>
   </g>
 
@@ -301,7 +301,7 @@
     </g>
 
     <!-- Bottom Figure Caption -->
-    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#5c5040" text-anchor="middle">
+    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#88889a" text-anchor="middle">
       Fig 1.0 — Spark homepage &amp; matchmaking engine with real-time Socket.IO communication.
     </text>
 
@@ -310,7 +310,7 @@
       <rect x="0" y="0" width="34" height="34" rx="3" fill="#a83c2e" opacity="0.9" />
       <!-- Stylized Kanji/Monogram Seal -->
       <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#ffffff" stroke-width="1.4" opacity="0.85" />
-      <text x="17" y="48" class="mono-caps" font-size="9" fill="#7a6b5a" text-anchor="middle" font-weight="600">FEB 2025</text>
+      <text x="17" y="48" class="mono-caps" font-size="9" fill="#c5a880" text-anchor="middle" font-weight="600">FEB 2025</text>
     </g>
   </g>
 </svg>

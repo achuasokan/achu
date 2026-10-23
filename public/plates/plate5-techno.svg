@@ -2,44 +2,44 @@
   <defs>
     <filter id="paper-grain-5" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
-      <feDiffuseLighting in="noise" lighting-color="#fffdf7" surfaceScale="1.1" result="light">
+      <feDiffuseLighting in="noise" lighting-color="#1c1c24" surfaceScale="1.1" result="light">
         <feDistantLight azimuth="65" elevation="55" />
       </feDiffuseLighting>
       <feBlend mode="multiply" in="SourceGraphic" in2="light" />
     </filter>
 
     <filter id="mounted-shadow-5" x="-5%" y="-5%" width="112%" height="114%">
-      <feDropShadow dx="2" dy="8" stdDeviation="12" flood-color="#3c2c19" flood-opacity="0.18" />
+      <feDropShadow dx="2" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
     </filter>
 
     <linearGradient id="spine-crease-left-5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0" />
-      <stop offset="75%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0.32" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="75%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
     </linearGradient>
 
     <linearGradient id="spine-crease-right-5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0.32" />
-      <stop offset="25%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6" />
+      <stop offset="25%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="stack-edge-left-5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d6caa9" />
-      <stop offset="60%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#f2ebd7" />
+      <stop offset="0%" stop-color="#0e0e13" />
+      <stop offset="60%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#2a2a38" />
     </linearGradient>
 
     <linearGradient id="stack-edge-right-5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f2ebd7" />
-      <stop offset="40%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#d6caa9" />
+      <stop offset="0%" stop-color="#2a2a38" />
+      <stop offset="40%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#0e0e13" />
     </linearGradient>
 
     <linearGradient id="techno-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a3d91" />
-      <stop offset="50%" stop-color="#1456c2" />
-      <stop offset="100%" stop-color="#0b2c68" />
+      <stop offset="0%" stop-color="#081832" />
+      <stop offset="50%" stop-color="#103373" />
+      <stop offset="100%" stop-color="#07142b" />
     </linearGradient>
   </defs>
 
@@ -51,161 +51,162 @@
   </style>
 
   <!-- Physical Stacked Page Block Depth -->
-  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-5)" opacity="0.9" />
-  <line x1="28" y1="48" x2="28" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="34" y1="42" x2="34" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="40" y1="36" x2="40" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-5)" opacity="0.95" />
+  <line x1="28" y1="48" x2="28" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="34" y1="42" x2="34" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="40" y1="36" x2="40" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
-  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-5)" opacity="0.9" />
-  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-5)" opacity="0.95" />
+  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
   <!-- Left Open Page Surface -->
-  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#fbf7ee" />
+  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#121217" />
 
   <!-- Right Open Page Surface -->
-  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#fdf9f2" />
+  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#15151b" />
 
-  <rect x="42" y="26" width="1916" height="928" fill="#fcf8f0" opacity="0.15" filter="url(#paper-grain-5)" />
+  <rect x="42" y="26" width="1916" height="928" fill="#15151e" opacity="0.1" filter="url(#paper-grain-5)" />
 
   <!-- Spine Shading -->
   <rect x="860" y="34" width="140" height="912" fill="url(#spine-crease-left-5)" />
   <rect x="1000" y="34" width="140" height="912" fill="url(#spine-crease-right-5)" />
-  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#322212" stroke-opacity="0.32" stroke-width="1.8" />
+  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#000000" stroke-opacity="0.6" stroke-width="1.8" />
 
-  <circle cx="1000" cy="140" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="320" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="510" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="700" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="860" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="140" r="2.8" fill="#000000" opacity="0.8" />
+  <circle cx="1000" cy="320" r="2.8" fill="#000000" opacity="0.8" />
+  <circle cx="1000" cy="510" r="2.8" fill="#000000" opacity="0.8" />
+  <circle cx="1000" cy="700" r="2.8" fill="#000000" opacity="0.8" />
+  <circle cx="1000" cy="860" r="2.8" fill="#000000" opacity="0.8" />
 
   <!-- ================= LEFT SPREAD ================= -->
   <g transform="translate(100, 75)">
-    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" font-weight="600">PLATE V · FULL STACK HUB</text>
-    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" text-anchor="end">DIGITAL AGENCY · 2024</text>
-    <line x1="0" y1="38" x2="760" y2="38" stroke="#2b2721" stroke-opacity="0.14" stroke-width="1" />
+    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" font-weight="600">PLATE V · FULL STACK HUB</text>
+    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" opacity="0.75" text-anchor="end">DIGITAL AGENCY · 2024</text>
+    <line x1="0" y1="38" x2="760" y2="38" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" />
 
-    <text x="0" y="98" class="serif-display" font-size="52" fill="#241f1a" letter-spacing="-0.01em">Techno Hub</text>
-    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#1b5eb8">Digital Agency &amp; Architecture Platform</text>
+    <text x="0" y="98" class="serif-display" font-size="52" fill="#ffffff" letter-spacing="-0.01em">Techno Hub</text>
+    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#4a9eff">Digital Agency &amp; Architecture Platform</text>
 
     <g transform="translate(0, 162)">
-      <rect x="0" y="0" width="86" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="43" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Full Stack</text>
-      <rect x="94" y="0" width="86" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="137" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Node.js</text>
-      <rect x="188" y="0" width="94" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="235" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">JavaScript</text>
-      <rect x="290" y="0" width="100" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="340" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">UI Systems</text>
+      <rect x="0" y="0" width="86" height="24" rx="4" fill="#1c1c24" stroke="#333344" />
+      <text x="43" y="16" class="mono-caps" font-size="9" fill="#dfb776" text-anchor="middle">Full Stack</text>
+      <rect x="94" y="0" width="86" height="24" rx="4" fill="#1c1c24" stroke="#333344" />
+      <text x="137" y="16" class="mono-caps" font-size="9" fill="#dfb776" text-anchor="middle">Node.js</text>
+      <rect x="188" y="0" width="94" height="24" rx="4" fill="#1c1c24" stroke="#333344" />
+      <text x="235" y="16" class="mono-caps" font-size="9" fill="#dfb776" text-anchor="middle">JavaScript</text>
+      <rect x="290" y="0" width="100" height="24" rx="4" fill="#1c1c24" stroke="#333344" />
+      <text x="340" y="16" class="mono-caps" font-size="9" fill="#dfb776" text-anchor="middle">UI Systems</text>
     </g>
 
-    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#2d2822">
+    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#c8c8d4">
       <text x="0" y="0" line-height="1.65">Techno Hub represents full-stack digital craft: uniting modular component</text>
       <text x="0" y="30">composition, fluid hero carousels, responsive mobile navigation, and rock-solid</text>
       <text x="0" y="60">REST API communication. Engineered with clean architecture and SOLID</text>
       <text x="0" y="90">principles, creating maintainable, high-performance web systems.</text>
     </g>
 
-    <line x1="0" y1="365" x2="760" y2="365" stroke="#2b2721" stroke-opacity="0.1" stroke-width="1" />
+    <line x1="0" y1="365" x2="760" y2="365" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
 
     <g transform="translate(0, 400)">
-      <text x="0" y="0" class="mono-caps" font-size="11" fill="#8c775f" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
+      <text x="0" y="0" class="mono-caps" font-size="11" fill="#dfb776" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
 
       <g transform="translate(0, 28)">
-        <circle cx="5" cy="8" r="3" fill="#1b5eb8" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Clean Architecture &amp; Modular Separation</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Domain isolation between business rules, controllers, and presentation layers.</text>
+        <circle cx="5" cy="8" r="3" fill="#3b82f6" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#ffffff">Clean Architecture &amp; Modular Separation</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#a4a4b4">Domain isolation between business rules, controllers, and presentation layers.</text>
       </g>
 
       <g transform="translate(0, 88)">
-        <circle cx="5" cy="8" r="3" fill="#1b5eb8" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Interactive Carousel &amp; Motion Controls</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Fluid touch-enabled slider track with indicator dashes and directional chevrons.</text>
+        <circle cx="5" cy="8" r="3" fill="#3b82f6" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#ffffff">Interactive Carousel &amp; Motion Controls</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#a4a4b4">Fluid touch-enabled slider track with indicator dashes and directional chevrons.</text>
       </g>
 
       <g transform="translate(0, 148)">
-        <circle cx="5" cy="8" r="3" fill="#1b5eb8" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Responsive Header &amp; Hamburger Drawer</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Accessible navigation structure adapting gracefully from wide screens to mobile.</text>
+        <circle cx="5" cy="8" r="3" fill="#3b82f6" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#ffffff">Responsive Header &amp; Hamburger Drawer</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#a4a4b4">Accessible navigation structure adapting gracefully from wide screens to mobile.</text>
       </g>
     </g>
 
     <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#b03e33" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
-      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#b03e33" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
-      <text x="82" y="42" class="mono-caps" font-size="8" fill="#b03e33" text-anchor="middle">FULL STACK VERIFIED</text>
+      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#dfb776" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
+      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#dfb776" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
+      <text x="82" y="42" class="mono-caps" font-size="8" fill="#dfb776" text-anchor="middle">FULL STACK VERIFIED</text>
 
-      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#66594b">Crafted with Clean Architecture &amp; Node</text>
-      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#887866">github.com/achuasokan</text>
+      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#ffffff">Crafted with Clean Architecture &amp; Node</text>
+      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#888899">github.com/achuasokan</text>
     </g>
   </g>
 
   <!-- ================= RIGHT SPREAD ================= -->
   <g transform="translate(1080, 75)">
     <g filter="url(#mounted-shadow-5)">
-      <rect x="0" y="0" width="770" height="740" rx="8" fill="#ffffff" />
-      <rect x="0" y="0" width="770" height="38" rx="8" fill="#f1f3f4" />
+      <!-- Browser window frame -->
+      <rect x="0" y="0" width="770" height="740" rx="8" fill="#0d0d12" stroke="#252530" stroke-width="1" />
+      <rect x="0" y="0" width="770" height="38" rx="8" fill="#181820" />
       <circle cx="20" cy="19" r="5" fill="#ff5f56" />
       <circle cx="36" cy="19" r="5" fill="#ffbd2e" />
       <circle cx="52" cy="19" r="5" fill="#27c93f" />
 
-      <rect x="80" y="7" width="500" height="24" rx="4" fill="#ffffff" stroke="#dadce0" stroke-width="1" />
-      <text x="96" y="23" class="mono-caps" font-size="9.5" fill="#5f6368">https://techno-web.app</text>
+      <rect x="80" y="7" width="500" height="24" rx="4" fill="#0d0d12" stroke="#2c2c36" stroke-width="0.8" />
+      <text x="96" y="23" class="mono-caps" font-size="9.5" fill="#9999a8">https://techno-web.app</text>
 
       <!-- Techno UI -->
       <g transform="translate(0, 38)">
-        <rect x="0" y="0" width="770" height="702" fill="#ffffff" />
+        <rect x="0" y="0" width="770" height="702" fill="#0a0a0f" />
 
         <!-- Nav -->
-        <rect x="0" y="0" width="770" height="60" fill="#ffffff" stroke="#eeeeee" stroke-width="1" />
-        <text x="36" y="38" class="sans" font-size="24" font-weight="700" fill="#222222">Techno-<tspan fill="#f59e0b">web</tspan></text>
+        <rect x="0" y="0" width="770" height="60" fill="#121218" stroke="#22222c" stroke-width="1" />
+        <text x="36" y="38" class="sans" font-size="24" font-weight="700" fill="#ffffff">Techno-<tspan fill="#f59e0b">web</tspan></text>
 
-        <rect x="680" y="14" width="46" height="32" rx="4" fill="#ffffff" stroke="#cccccc" stroke-width="1" />
-        <line x1="692" y1="22" x2="714" y2="22" stroke="#666666" stroke-width="2" />
-        <line x1="692" y1="30" x2="714" y2="30" stroke="#666666" stroke-width="2" />
-        <line x1="692" y1="38" x2="714" y2="38" stroke="#666666" stroke-width="2" />
+        <rect x="680" y="14" width="46" height="32" rx="4" fill="#1c1c24" stroke="#333342" stroke-width="1" />
+        <line x1="692" y1="22" x2="714" y2="22" stroke="#e0e0e8" stroke-width="2" />
+        <line x1="692" y1="30" x2="714" y2="30" stroke="#e0e0e8" stroke-width="2" />
+        <line x1="692" y1="38" x2="714" y2="38" stroke="#e0e0e8" stroke-width="2" />
 
         <!-- Blue Hero Section -->
         <g transform="translate(0, 60)">
           <rect x="0" y="0" width="770" height="642" fill="url(#techno-glow)" />
 
-          <!-- Stylized Silhouette Portrait -->
-          <circle cx="385" cy="280" r="140" fill="#1d4ed8" opacity="0.6" />
-          <circle cx="385" cy="240" r="85" fill="#0b2c68" opacity="0.8" />
-          <path d="M260,420 Q385,340 510,420 L510,642 L260,642 Z" fill="#0b2c68" opacity="0.9" />
+          <!-- Stylized Silhouette Portrait with dark luminescence -->
+          <circle cx="385" cy="280" r="140" fill="#2563eb" opacity="0.35" />
+          <circle cx="385" cy="240" r="85" fill="#0a1936" opacity="0.9" />
+          <path d="M260,420 Q385,340 510,420 L510,642 L260,642 Z" fill="#071329" opacity="0.95" />
 
           <!-- Left Nav Arrow -->
           <g transform="translate(36, 320)">
-            <circle cx="0" cy="0" r="20" fill="#ffffff" opacity="0.15" />
+            <circle cx="0" cy="0" r="20" fill="#ffffff" opacity="0.12" />
             <path d="M5,-10 L-6,0 L5,10" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
           </g>
 
           <!-- Right Nav Arrow -->
           <g transform="translate(734, 320)">
-            <circle cx="0" cy="0" r="20" fill="#ffffff" opacity="0.15" />
+            <circle cx="0" cy="0" r="20" fill="#ffffff" opacity="0.12" />
             <path d="M-5,-10 L6,0 L-5,10" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
           </g>
 
           <!-- Carousel Dots -->
           <g transform="translate(335, 590)">
-            <rect x="0" y="0" width="30" height="4" rx="2" fill="#ffffff" opacity="0.5" />
-            <rect x="38" y="0" width="30" height="4" rx="2" fill="#ffffff" opacity="0.5" />
-            <rect x="76" y="0" width="30" height="4" rx="2" fill="#ffffff" opacity="1" />
+            <rect x="0" y="0" width="30" height="4" rx="2" fill="#ffffff" opacity="0.3" />
+            <rect x="38" y="0" width="30" height="4" rx="2" fill="#ffffff" opacity="0.3" />
+            <rect x="76" y="0" width="30" height="4" rx="2" fill="#f59e0b" opacity="1" />
           </g>
         </g>
       </g>
     </g>
 
-    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#5c5040" text-anchor="middle">
+    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#a09888" text-anchor="middle">
       Fig 5.0 — Techno-Web digital hub with clean navigation and interactive hero carousel.
     </text>
 
     <!-- Hanko Artist Seal & Date Stamp -->
     <g transform="translate(710, 785)">
-      <rect x="0" y="0" width="34" height="34" rx="3" fill="#a83c2e" opacity="0.9" />
-      <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#ffffff" stroke-width="1.4" opacity="0.85" />
-      <text x="17" y="48" class="mono-caps" font-size="9" fill="#7a6b5a" text-anchor="middle" font-weight="600">JUN 2024</text>
+      <rect x="0" y="0" width="34" height="34" rx="3" fill="#dfb776" opacity="0.9" />
+      <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#0a0a0f" stroke-width="1.4" opacity="0.9" />
+      <text x="17" y="48" class="mono-caps" font-size="9" fill="#dfb776" text-anchor="middle" font-weight="600">JUN 2024</text>
     </g>
   </g>
 </svg>

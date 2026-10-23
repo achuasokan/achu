@@ -13,27 +13,27 @@
     </filter>
 
     <linearGradient id="spine-crease-left-3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0" />
-      <stop offset="75%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0.32" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
     </linearGradient>
 
     <linearGradient id="spine-crease-right-3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#342410" stop-opacity="0.32" />
-      <stop offset="25%" stop-color="#342410" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#342410" stop-opacity="0" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="stack-edge-left-3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d6caa9" />
-      <stop offset="60%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#f2ebd7" />
+      <stop offset="0%" stop-color="#0e0e13" />
+      <stop offset="60%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#2a2a38" />
     </linearGradient>
 
     <linearGradient id="stack-edge-right-3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f2ebd7" />
-      <stop offset="40%" stop-color="#e8dec6" />
-      <stop offset="100%" stop-color="#d6caa9" />
+      <stop offset="0%" stop-color="#2a2a38" />
+      <stop offset="40%" stop-color="#1e1e27" />
+      <stop offset="100%" stop-color="#0e0e13" />
     </linearGradient>
   </defs>
 
@@ -45,150 +45,150 @@
   </style>
 
   <!-- Physical Stacked Page Block Depth -->
-  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-3)" opacity="0.9" />
-  <line x1="28" y1="48" x2="28" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="34" y1="42" x2="34" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="40" y1="36" x2="40" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 24 38 Q 22 490 24 942 Q 34 946 44 948 L 44 32 Q 34 35 24 38 Z" fill="url(#stack-edge-left-3)" opacity="0.95" />
+  <line x1="28" y1="48" x2="28" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="34" y1="42" x2="34" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="40" y1="36" x2="40" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
-  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-3)" opacity="0.9" />
-  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
-  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#bdae8c" stroke-width="0.8" opacity="0.6" />
+  <path d="M 1976 38 Q 1978 490 1976 942 Q 1966 946 1956 948 L 1956 32 Q 1966 35 1976 38 Z" fill="url(#stack-edge-right-3)" opacity="0.95" />
+  <line x1="1972" y1="48" x2="1972" y2="932" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1966" y1="42" x2="1966" y2="938" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
+  <line x1="1960" y1="36" x2="1960" y2="944" stroke="#4a4032" stroke-width="0.8" opacity="0.5" />
 
   <!-- Left Open Page Surface -->
-  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#fbf7ee" />
+  <path d="M 64 26 C 50 26, 42 34, 42 50 L 42 930 C 42 946, 50 954, 64 954 C 340 952, 700 948, 1000 944 L 1000 36 C 700 32, 340 28, 64 26 Z" fill="#121217" />
 
   <!-- Right Open Page Surface -->
-  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#fdf9f2" />
+  <path d="M 1000 36 C 1300 32, 1660 28, 1936 26 C 1950 26, 1958 34, 1958 50 L 1958 930 C 1958 946, 1950 954, 1936 954 C 1660 952, 1300 948, 1000 944 Z" fill="#15151b" />
 
-  <rect x="42" y="26" width="1916" height="928" fill="#fcf8f0" opacity="0.15" filter="url(#paper-grain-3)" />
+  <rect x="42" y="26" width="1916" height="928" fill="#0b0b0f" opacity="0.12" filter="url(#paper-grain-3)" />
 
   <!-- Spine Shading -->
   <rect x="860" y="34" width="140" height="912" fill="url(#spine-crease-left-3)" />
   <rect x="1000" y="34" width="140" height="912" fill="url(#spine-crease-right-3)" />
-  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#322212" stroke-opacity="0.32" stroke-width="1.8" />
+  <line x1="1000" y1="36" x2="1000" y2="944" stroke="#000000" stroke-opacity="0.6" stroke-width="1.8" />
 
-  <circle cx="1000" cy="140" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="320" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="510" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="700" r="2.8" fill="#25170b" opacity="0.65" />
-  <circle cx="1000" cy="860" r="2.8" fill="#25170b" opacity="0.65" />
+  <circle cx="1000" cy="140" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="320" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="510" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="700" r="2.8" fill="#050508" opacity="0.9" />
+  <circle cx="1000" cy="860" r="2.8" fill="#050508" opacity="0.9" />
 
   <!-- ================= LEFT SPREAD ================= -->
   <g transform="translate(100, 75)">
-    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" font-weight="600">PLATE III · MEDIA &amp; STREAMING INTERFACE</text>
-    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#8c775f" text-anchor="end">REACT WEB APPLICATION · 2024</text>
-    <line x1="0" y1="38" x2="760" y2="38" stroke="#2b2721" stroke-opacity="0.14" stroke-width="1" />
+    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" font-weight="600">PLATE III · MEDIA &amp; STREAMING INTERFACE</text>
+    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" text-anchor="end">REACT WEB APPLICATION · 2024</text>
+    <line x1="0" y1="38" x2="760" y2="38" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
 
-    <text x="0" y="98" class="serif-display" font-size="52" fill="#241f1a" letter-spacing="-0.01em">YouTube Platform</text>
-    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#d92323">Video Streaming &amp; Discovery Interface</text>
+    <text x="0" y="98" class="serif-display" font-size="52" fill="#ffffff" letter-spacing="-0.01em">YouTube Platform</text>
+    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#ff4444">Video Streaming &amp; Discovery Interface</text>
 
     <g transform="translate(0, 162)">
-      <rect x="0" y="0" width="76" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="38" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">React</text>
-      <rect x="84" y="0" width="92" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="130" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">REST APIs</text>
-      <rect x="184" y="0" width="108" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="238" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">Video Player</text>
-      <rect x="300" y="0" width="112" height="24" rx="4" fill="#eee5d3" stroke="#2b2721" stroke-opacity="0.15" />
-      <text x="356" y="16" class="mono-caps" font-size="9" fill="#3b3228" text-anchor="middle">TailwindCSS</text>
+      <rect x="0" y="0" width="76" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="38" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">React</text>
+      <rect x="84" y="0" width="92" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="130" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">REST APIs</text>
+      <rect x="184" y="0" width="108" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="238" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Video Player</text>
+      <rect x="300" y="0" width="112" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
+      <text x="356" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">TailwindCSS</text>
     </g>
 
-    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#2d2822">
+    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#b8b8c8">
       <text x="0" y="0" line-height="1.65">A dynamic recreation of YouTube’s modern web client, engineered to handle</text>
       <text x="0" y="30">large video catalogues, responsive multi-channel filtering, instant category</text>
       <text x="0" y="60">switching, and custom video playback. Deployed on Vercel with clean modular</text>
       <text x="0" y="90">component architecture and real-time query debounce.</text>
     </g>
 
-    <line x1="0" y1="365" x2="760" y2="365" stroke="#2b2721" stroke-opacity="0.1" stroke-width="1" />
+    <line x1="0" y1="365" x2="760" y2="365" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
 
     <g transform="translate(0, 400)">
-      <text x="0" y="0" class="mono-caps" font-size="11" fill="#8c775f" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
+      <text x="0" y="0" class="mono-caps" font-size="11" fill="#dfb776" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
 
       <g transform="translate(0, 28)">
-        <circle cx="5" cy="8" r="3" fill="#d92323" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Asynchronous Feed Ingestion &amp; Search</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Live search bar with debounced API queries and category suggestion pills.</text>
+        <circle cx="5" cy="8" r="3" fill="#ff4444" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Asynchronous Feed Ingestion &amp; Search</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Live search bar with debounced API queries and category suggestion pills.</text>
       </g>
 
       <g transform="translate(0, 88)">
-        <circle cx="5" cy="8" r="3" fill="#d92323" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Responsive Multi-Grid Media Cards</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Adaptive thumbnail cards with duration badges, channel avatars, and view counts.</text>
+        <circle cx="5" cy="8" r="3" fill="#ff4444" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Responsive Multi-Grid Media Cards</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Adaptive thumbnail cards with duration badges, channel avatars, and view counts.</text>
       </g>
 
       <g transform="translate(0, 148)">
-        <circle cx="5" cy="8" r="3" fill="#d92323" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#25211c">Collapsible Multi-Tier Navigation</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#4d443a">Sidebar navigation with library history, subscriptions, and drawer toggles.</text>
+        <circle cx="5" cy="8" r="3" fill="#ff4444" />
+        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Collapsible Multi-Tier Navigation</text>
+        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Sidebar navigation with library history, subscriptions, and drawer toggles.</text>
       </g>
     </g>
 
     <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#b03e33" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
-      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#b03e33" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
-      <text x="82" y="42" class="mono-caps" font-size="8" fill="#b03e33" text-anchor="middle">FULL STACK VERIFIED</text>
+      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#dfb776" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
+      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#dfb776" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
+      <text x="82" y="42" class="mono-caps" font-size="8" fill="#dfb776" text-anchor="middle">FULL STACK VERIFIED</text>
 
-      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#66594b">youtube-lime-seven.vercel.app</text>
-      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#887866">Live Production Deployment</text>
+      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#a0a0b2">youtube-lime-seven.vercel.app</text>
+      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#dfb776" opacity="0.75">Live Production Deployment</text>
     </g>
   </g>
 
   <!-- ================= RIGHT SPREAD ================= -->
   <g transform="translate(1080, 75)">
     <g filter="url(#mounted-shadow-3)">
-      <rect x="0" y="0" width="770" height="740" rx="8" fill="#ffffff" />
-      <rect x="0" y="0" width="770" height="38" rx="8" fill="#f1f3f4" />
+      <rect x="0" y="0" width="770" height="740" rx="8" fill="#141418" />
+      <rect x="0" y="0" width="770" height="38" rx="8" fill="#1e1e24" />
       <circle cx="20" cy="19" r="5" fill="#ff5f56" />
       <circle cx="36" cy="19" r="5" fill="#ffbd2e" />
       <circle cx="52" cy="19" r="5" fill="#27c93f" />
 
-      <rect x="80" y="7" width="500" height="24" rx="4" fill="#ffffff" stroke="#dadce0" stroke-width="1" />
-      <text x="96" y="23" class="mono-caps" font-size="9.5" fill="#5f6368">https://youtube-lime-seven.vercel.app</text>
+      <rect x="80" y="7" width="500" height="24" rx="4" fill="#0d0d12" stroke="#2c2c36" stroke-width="1" />
+      <text x="96" y="23" class="mono-caps" font-size="9.5" fill="#9e9ea8">https://youtube-lime-seven.vercel.app</text>
 
       <!-- YouTube UI -->
       <g transform="translate(0, 38)">
-        <rect x="0" y="0" width="770" height="702" fill="#ffffff" />
+        <rect x="0" y="0" width="770" height="702" fill="#0f0f0f" />
 
         <!-- Header -->
-        <rect x="0" y="0" width="770" height="50" fill="#ffffff" stroke="#e5e5e5" stroke-width="1" />
+        <rect x="0" y="0" width="770" height="50" fill="#0f0f0f" stroke="#272727" stroke-width="1" />
         <g transform="translate(24, 15)">
-          <line x1="0" y1="4" x2="18" y2="4" stroke="#606060" stroke-width="2" />
-          <line x1="0" y1="10" x2="18" y2="10" stroke="#606060" stroke-width="2" />
-          <line x1="0" y1="16" x2="18" y2="16" stroke="#606060" stroke-width="2" />
+          <line x1="0" y1="4" x2="18" y2="4" stroke="#ffffff" stroke-width="2" />
+          <line x1="0" y1="10" x2="18" y2="10" stroke="#ffffff" stroke-width="2" />
+          <line x1="0" y1="16" x2="18" y2="16" stroke="#ffffff" stroke-width="2" />
         </g>
         <g transform="translate(56, 15)">
           <rect x="0" y="2" width="28" height="18" rx="5" fill="#ff0000" />
           <polygon points="11,6 19,11 11,16" fill="#ffffff" />
-          <text x="34" y="16" class="sans" font-size="16" font-weight="800" fill="#212121" letter-spacing="-0.04em">YouTube</text>
+          <text x="34" y="16" class="sans" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="-0.04em">YouTube</text>
         </g>
 
         <!-- Search -->
         <g transform="translate(250, 10)">
-          <rect x="0" y="0" width="300" height="30" rx="2" fill="#ffffff" stroke="#cccccc" stroke-width="1" />
+          <rect x="0" y="0" width="300" height="30" rx="2" fill="#121212" stroke="#303030" stroke-width="1" />
           <text x="14" y="20" class="sans" font-size="12" fill="#888888">Search</text>
-          <rect x="256" y="0" width="44" height="30" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" />
-          <circle cx="276" cy="15" r="4.5" fill="none" stroke="#606060" stroke-width="1.5" />
-          <line x1="280" y1="19" x2="286" y2="25" stroke="#606060" stroke-width="1.5" />
+          <rect x="256" y="0" width="44" height="30" fill="#222222" stroke="#303030" stroke-width="1" />
+          <circle cx="276" cy="15" r="4.5" fill="none" stroke="#aaaaaa" stroke-width="1.5" />
+          <line x1="280" y1="19" x2="286" y2="25" stroke="#aaaaaa" stroke-width="1.5" />
         </g>
 
         <!-- Sidebar -->
         <g transform="translate(0, 50)">
-          <rect x="0" y="0" width="130" height="652" fill="#ffffff" stroke="#e5e5e5" stroke-width="1" />
-          <rect x="0" y="8" width="130" height="32" fill="#f2f2f2" />
-          <text x="38" y="29" class="sans" font-size="12" font-weight="700" fill="#ff0000">Home</text>
-          <text x="38" y="65" class="sans" font-size="12" fill="#606060">Trending</text>
-          <text x="38" y="101" class="sans" font-size="12" fill="#606060">Subscriptions</text>
-          <line x1="14" y1="120" x2="116" y2="120" stroke="#e5e5e5" stroke-width="1" />
-          <text x="16" y="142" class="mono-caps" font-size="8.5" fill="#909090">LIBRARY</text>
-          <text x="38" y="166" class="sans" font-size="12" fill="#606060">History</text>
-          <text x="38" y="196" class="sans" font-size="12" fill="#606060">Watch Later</text>
+          <rect x="0" y="0" width="130" height="652" fill="#0f0f0f" stroke="#272727" stroke-width="1" />
+          <rect x="0" y="8" width="130" height="32" rx="4" fill="#272727" />
+          <text x="38" y="29" class="sans" font-size="12" font-weight="700" fill="#ff4444">Home</text>
+          <text x="38" y="65" class="sans" font-size="12" fill="#aaaaaa">Trending</text>
+          <text x="38" y="101" class="sans" font-size="12" fill="#aaaaaa">Subscriptions</text>
+          <line x1="14" y1="120" x2="116" y2="120" stroke="#272727" stroke-width="1" />
+          <text x="16" y="142" class="mono-caps" font-size="8.5" fill="#777777">LIBRARY</text>
+          <text x="38" y="166" class="sans" font-size="12" fill="#aaaaaa">History</text>
+          <text x="38" y="196" class="sans" font-size="12" fill="#aaaaaa">Watch Later</text>
         </g>
 
         <!-- Video Grid -->
         <g transform="translate(150, 64)">
-          <text x="0" y="16" class="sans" font-size="16" font-weight="700" fill="#0f0f0f">Recommended</text>
+          <text x="0" y="16" class="sans" font-size="16" font-weight="700" fill="#ffffff">Recommended</text>
 
           <g transform="translate(0, 30)">
             <!-- Card 1 -->
@@ -196,24 +196,24 @@
               <rect x="0" y="0" width="186" height="110" rx="4" fill="#181818" />
               <rect x="146" y="86" width="34" height="16" rx="2" fill="#000000" opacity="0.85" />
               <text x="163" y="98" class="sans" font-size="9" fill="#ffffff" text-anchor="middle">6:53</text>
-              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#0f0f0f">YouTube Rewind: The...</text>
-              <text x="0" y="146" class="sans" font-size="10" fill="#606060">Spotlight · 190M views</text>
+              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#f1f1f1">YouTube Rewind: The...</text>
+              <text x="0" y="146" class="sans" font-size="10" fill="#888888">Spotlight · 190M views</text>
             </g>
             <!-- Card 2 -->
             <g transform="translate(202, 0)">
               <rect x="0" y="0" width="186" height="110" rx="4" fill="#1b3b24" />
               <rect x="146" y="86" width="34" height="16" rx="2" fill="#000000" opacity="0.85" />
               <text x="163" y="98" class="sans" font-size="9" fill="#ffffff" text-anchor="middle">1:02</text>
-              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#0f0f0f">Explore Hidden Worlds...</text>
-              <text x="0" y="146" class="sans" font-size="10" fill="#606060">Google · 5M views</text>
+              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#f1f1f1">Explore Hidden Worlds...</text>
+              <text x="0" y="146" class="sans" font-size="10" fill="#888888">Google · 5M views</text>
             </g>
             <!-- Card 3 -->
             <g transform="translate(404, 0)">
               <rect x="0" y="0" width="186" height="110" rx="4" fill="#2b4468" />
               <rect x="146" y="86" width="34" height="16" rx="2" fill="#000000" opacity="0.85" />
               <text x="163" y="98" class="sans" font-size="9" fill="#ffffff" text-anchor="middle">7:37</text>
-              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#0f0f0f">Journey to the Bottom...</text>
-              <text x="0" y="146" class="sans" font-size="10" fill="#606060">Nat &amp; Friends · 255K</text>
+              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#f1f1f1">Journey to the Bottom...</text>
+              <text x="0" y="146" class="sans" font-size="10" fill="#888888">Nat &amp; Friends · 255K</text>
             </g>
           </g>
 
@@ -223,31 +223,31 @@
               <rect x="0" y="0" width="186" height="110" rx="4" fill="#382442" />
               <rect x="146" y="86" width="34" height="16" rx="2" fill="#000000" opacity="0.85" />
               <text x="163" y="98" class="sans" font-size="9" fill="#ffffff" text-anchor="middle">2:53</text>
-              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#0f0f0f">Beyond the Map: Rio...</text>
-              <text x="0" y="146" class="sans" font-size="10" fill="#606060">Google · 91K views</text>
+              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#f1f1f1">Beyond the Map: Rio...</text>
+              <text x="0" y="146" class="sans" font-size="10" fill="#888888">Google · 91K views</text>
             </g>
             <!-- Card 5 -->
             <g transform="translate(202, 0)">
               <rect x="0" y="0" width="186" height="110" rx="4" fill="#4a3e2a" />
               <rect x="146" y="86" width="34" height="16" rx="2" fill="#000000" opacity="0.85" />
               <text x="163" y="98" class="sans" font-size="9" fill="#ffffff" text-anchor="middle">1:49</text>
-              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#0f0f0f">Introducing Google Trips...</text>
-              <text x="0" y="146" class="sans" font-size="10" fill="#606060">Google · 1.3M views</text>
+              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#f1f1f1">Introducing Google Trips...</text>
+              <text x="0" y="146" class="sans" font-size="10" fill="#888888">Google · 1.3M views</text>
             </g>
             <!-- Card 6 -->
             <g transform="translate(404, 0)">
               <rect x="0" y="0" width="186" height="110" rx="4" fill="#2a3c3c" />
               <rect x="146" y="86" width="34" height="16" rx="2" fill="#000000" opacity="0.85" />
               <text x="163" y="98" class="sans" font-size="9" fill="#ffffff" text-anchor="middle">2:01</text>
-              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#0f0f0f">From Syria to Canada...</text>
-              <text x="0" y="146" class="sans" font-size="10" fill="#606060">Google · 333K views</text>
+              <text x="0" y="130" class="sans" font-size="12" font-weight="600" fill="#f1f1f1">From Syria to Canada...</text>
+              <text x="0" y="146" class="sans" font-size="10" fill="#888888">Google · 333K views</text>
             </g>
           </g>
         </g>
       </g>
     </g>
 
-    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#5c5040" text-anchor="middle">
+    <text x="385" y="785" class="serif-body" font-size="15" font-style="italic" fill="#88889a" text-anchor="middle">
       Fig 3.0 — YouTube streaming feed with debounced search and responsive category rails.
     </text>
 
@@ -255,7 +255,7 @@
     <g transform="translate(710, 785)">
       <rect x="0" y="0" width="34" height="34" rx="3" fill="#a83c2e" opacity="0.9" />
       <path d="M17,6 L17,28 M10,13 L24,13 M10,21 L24,21 M10,8 L10,26 M24,8 L24,26" stroke="#ffffff" stroke-width="1.4" opacity="0.85" />
-      <text x="17" y="48" class="mono-caps" font-size="9" fill="#7a6b5a" text-anchor="middle" font-weight="600">NOV 2024</text>
+      <text x="17" y="48" class="mono-caps" font-size="9" fill="#c5a880" text-anchor="middle" font-weight="600">NOV 2024</text>
     </g>
   </g>
 </svg>
