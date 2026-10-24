@@ -42,9 +42,6 @@ const PAGES: PageData[] = [
 ];
 
 const M = PAGES.length;
-const N = 18;
-const SPAN = 0.449;
-const BETA = 0.6;
 const TILT_X = 4.5;
 const TILT_Y = 7;
 const ZOOM_MIN = 0.9;
@@ -67,8 +64,6 @@ export default function SketchbookPortfolio() {
     to: number;
     t: number;
   } | null>(null);
-
-  const stripsRef = useRef<HTMLDivElement[]>([]);
   const springRef = useRef<{
     kind: "spring" | "tween";
     target: number;
@@ -119,25 +114,9 @@ export default function SketchbookPortfolio() {
 
   const applyTurn = useCallback((t: number) => {
     if (!sb3dRef.current) return;
-    const th = Math.PI * t;
-    const beta = BETA * Math.sin(Math.PI * t);
-    const D = 180 / Math.PI;
-    const tt = th + beta;
-    const td = (2 * beta) / N;
-    sb3dRef.current.style.setProperty("--tt", `${(tt * D).toFixed(2)}deg`);
-    sb3dRef.current.style.setProperty("--td", `${(td * D).toFixed(3)}deg`);
+    sb3dRef.current.style.setProperty("--t", t.toFixed(4));
     sb3dRef.current.style.setProperty("--shade", Math.sin(Math.PI * t).toFixed(3));
-
-    const strips = stripsRef.current;
-    for (let i = 0; i < strips.length; i++) {
-      const strip = strips[i];
-      if (!strip) continue;
-      const l1 = Math.abs(Math.cos(tt - i * td));
-      const l2 = Math.abs(Math.cos(tt - (i + 1) * td));
-      strip.style.setProperty("--lit", l1.toFixed(3));
-      strip.style.setProperty("--a1", ((1 - l1) * 0.62).toFixed(3));
-      strip.style.setProperty("--a2", ((1 - l2) * 0.62).toFixed(3));
-    }
+    sb3dRef.current.classList.toggle("past-half", t >= 0.5);
   }, []);
 
   const layout = useCallback(() => {
@@ -146,58 +125,42 @@ export default function SketchbookPortfolio() {
     }
   }, []);
 
-  const buildCurl = useCallback(
+  const buildLeaf = useCallback(
     (dir: "next" | "prev", from: number, to: number) => {
-      stripsRef.current = [];
-      const curl = document.createElement("div");
-      curl.className = `curl ${dir}`;
-      curl.style.setProperty("--n", String(N));
-      curl.style.setProperty("--span", String(SPAN));
+      const leaf = document.createElement("div");
+      leaf.className = `sb-leaf ${dir}`;
 
-      let host: HTMLElement = curl;
-      for (let i = 0; i < N; i++) {
-        const s = document.createElement("div");
-        s.className = "strip";
-        s.style.setProperty("--i", String(i));
-        const gut = "calc(var(--bw) * 0.5)";
-        const sw = `calc(var(--bw) * ${SPAN} / ${N})`;
-        const A = `calc(-1 * (${gut} + ${i} * ${sw}))`;
-        const B = `calc(${i + 1} * ${sw} - ${gut})`;
+      // Front face (visible 0° - 90°)
+      const f = document.createElement("div");
+      f.className = "sb-leaf-face front";
+      const fImg = new Image();
+      fImg.className = `sb-half-img ${dir === "next" ? "right" : "left"}`;
+      fImg.draggable = false;
+      fImg.alt = "";
+      fImg.src = PAGES[from].file;
+      f.appendChild(fImg);
 
-        const f = document.createElement("div");
-        f.className = "face front";
-        const b = document.createElement("div");
-        b.className = "face back";
+      const fShade = document.createElement("div");
+      fShade.className = `sb-leaf-shade ${dir === "next" ? "left" : "right"}`;
+      f.appendChild(fShade);
 
-        f.style.backgroundImage = `url(${PAGES[from].file})`;
-        f.style.backgroundPositionX = dir === "next" ? A : B;
+      // Back face (visible 90° - 180°, lands on opposite side)
+      const b = document.createElement("div");
+      b.className = "sb-leaf-face back";
+      const bImg = new Image();
+      bImg.className = `sb-half-img ${dir === "next" ? "left" : "right"}`;
+      bImg.draggable = false;
+      bImg.alt = "";
+      bImg.src = PAGES[to].file;
+      b.appendChild(bImg);
 
-        b.style.backgroundImage = `url(${PAGES[to].file})`;
-        b.style.backgroundPositionX = dir === "next" ? B : A;
+      const bShade = document.createElement("div");
+      bShade.className = `sb-leaf-shade ${dir === "next" ? "right" : "left"}`;
+      b.appendChild(bShade);
 
-        const fSh = document.createElement("div");
-        fSh.className = "sh";
-        const fGl = document.createElement("div");
-        fGl.className = "gl";
-        f.appendChild(fSh);
-        f.appendChild(fGl);
-
-        const bSh = document.createElement("div");
-        bSh.className = "sh";
-        const bGl = document.createElement("div");
-        bGl.className = "gl";
-        b.appendChild(bSh);
-        b.appendChild(bGl);
-
-        s.appendChild(f);
-        s.appendChild(b);
-        if (i === N - 1) s.classList.add("edge");
-
-        host.appendChild(s);
-        host = s;
-        stripsRef.current.push(s);
-      }
-      return curl;
+      leaf.appendChild(f);
+      leaf.appendChild(b);
+      return leaf;
     },
     []
   );
@@ -245,13 +208,15 @@ export default function SketchbookPortfolio() {
       }
 
       book.appendChild(f);
+      sb3dRef.current.style.setProperty("--t", "0");
       sb3dRef.current.style.setProperty("--shade", "0");
+      sb3dRef.current.classList.remove("past-half");
       setActiveCaption(PAGES[idx].title);
     } else {
       const next = turn.dir === "next";
       book.appendChild(halfEl("left", next ? turn.from : turn.to));
       book.appendChild(halfEl("right", next ? turn.to : turn.from));
-      book.appendChild(buildCurl(turn.dir, turn.from, turn.to));
+      book.appendChild(buildLeaf(turn.dir, turn.from, turn.to));
       applyTurn(turn.t);
       setActiveCaption(`${PAGES[turn.from].title} → ${PAGES[turn.to].title}`);
     }
@@ -268,7 +233,7 @@ export default function SketchbookPortfolio() {
     book.appendChild(nextZone);
 
     layout();
-  }, [applyTurn, buildCurl, halfEl, idx, layout]);
+  }, [applyTurn, buildLeaf, halfEl, idx, layout]);
 
   const applyView = useCallback(() => {
     if (!sb3dRef.current) return;
@@ -324,10 +289,10 @@ export default function SketchbookPortfolio() {
   );
 
   const animateTo = useCallback(
-    (target: number, onDone: () => void, stiff = 170, damp = 26) => {
+    (target: number, onDone: () => void, initialVel = 0, stiff = 220, damp = 24) => {
       springRef.current = {
         kind: "spring",
-        v: 0,
+        v: initialVel,
         target,
         done: onDone,
         k: stiff,
@@ -353,23 +318,41 @@ export default function SketchbookPortfolio() {
     [kick]
   );
 
-  const commitTurn = useCallback(() => {
-    const turn = turnRef.current;
-    if (!turn) return;
-    animateTo(1, () => {
-      const nextIdx = turn.to;
-      turnRef.current = null;
-      setIdx(nextIdx);
-    });
-  }, [animateTo]);
+  const commitTurn = useCallback(
+    (initialVel = 0) => {
+      const turn = turnRef.current;
+      if (!turn) return;
+      animateTo(
+        1,
+        () => {
+          const nextIdx = turn.to;
+          turnRef.current = null;
+          setIdx(nextIdx);
+        },
+        initialVel,
+        220,
+        24
+      );
+    },
+    [animateTo]
+  );
 
-  const cancelTurn = useCallback(() => {
-    if (!turnRef.current) return;
-    animateTo(0, () => {
-      turnRef.current = null;
-      paint();
-    });
-  }, [animateTo, paint]);
+  const cancelTurn = useCallback(
+    (initialVel = 0) => {
+      if (!turnRef.current) return;
+      animateTo(
+        0,
+        () => {
+          turnRef.current = null;
+          paint();
+        },
+        initialVel,
+        220,
+        24
+      );
+    },
+    [animateTo, paint]
+  );
 
   const startTurn = useCallback(
     (dir: "next" | "prev", t = 0) => {
@@ -393,7 +376,7 @@ export default function SketchbookPortfolio() {
         turnRef.current = null;
       }
       startTurn(dir, 0);
-      commitTurn();
+      commitTurn(2.4);
     },
     [commitTurn, startTurn]
   );
@@ -437,9 +420,9 @@ export default function SketchbookPortfolio() {
           }
         } else {
           const x = turn.t - spring.target;
-          spring.v = (spring.v || 0) + (-(spring.k || 170) * x - (spring.c || 26) * (spring.v || 0)) * dt;
+          spring.v = (spring.v || 0) + (-(spring.k || 220) * x - (spring.c || 24) * (spring.v || 0)) * dt;
           turn.t += (spring.v || 0) * dt;
-          if (Math.abs(turn.t - spring.target) < 0.002 && Math.abs(spring.v || 0) < 0.02) {
+          if (Math.abs(turn.t - spring.target) < 0.003 && Math.abs(spring.v || 0) < 0.03) {
             turn.t = spring.target;
             springRef.current = null;
             applyTurn(turn.t);
@@ -540,10 +523,12 @@ export default function SketchbookPortfolio() {
     if (!drag) return;
     const dx = e.clientX - drag.x0;
     drag.moved = Math.max(drag.moved, Math.abs(dx));
-    const raw = (drag.dir === "next" ? -dx : dx) / (drag.w * 0.62);
+    const raw = (drag.dir === "next" ? -dx : dx) / (drag.w * 0.5);
     const t = Math.max(0, Math.min(1, raw));
     const now = performance.now();
-    drag.vel = (t - (turnRef.current ? turnRef.current.t : 0)) / Math.max(0.001, (now - drag.tPrev) / 1000);
+    const dt = Math.max(0.001, (now - drag.tPrev) / 1000);
+    const prevT = turnRef.current ? turnRef.current.t : 0;
+    drag.vel = (t - prevT) / dt;
     drag.tPrev = now;
 
     if (turnRef.current) {
@@ -559,13 +544,14 @@ export default function SketchbookPortfolio() {
     const turn = turnRef.current;
     if (!turn) return;
 
-    if (drag.moved < 15) {
-      cancelTurn();
+    if (drag.moved < 10) {
+      cancelTurn(0);
       return;
     }
-    const go = turn.t > 0.42 || drag.vel > 1.1;
-    if (go) commitTurn();
-    else cancelTurn();
+    const vel = Math.max(-6, Math.min(6, drag.vel || 0));
+    const go = turn.t > 0.35 || vel > 0.6;
+    if (go) commitTurn(vel);
+    else cancelTurn(vel);
   };
 
   return (
