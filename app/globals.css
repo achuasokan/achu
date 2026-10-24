@@ -357,9 +357,9 @@ button {
   position: relative;
   flex: 1 1;
   min-width: 0;
-  max-width: 1060px;
-  width: min(1060px, 90vw);
-  perspective: 1750px;
+  max-width: 1130px;
+  width: min(1130px, 91vw);
+  perspective: 1800px;
   perspective-origin: 50% 46%;
 }
 
@@ -783,7 +783,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1060px;
+  max-width: 1130px;
   padding: 0 16px;
 }
 
@@ -1086,7 +1086,7 @@ button {
 
 /* ---------------- Plates Index Section ---------------- */
 .plates {
-  max-width: 1080px;
+  max-width: 1130px;
   margin: 0 auto;
   padding: 0 clamp(20px, 5vw, 48px);
 }
