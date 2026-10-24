@@ -235,7 +235,8 @@ export default function SketchbookPortfolio() {
 
       if (PAGES[idx].url) {
         const liveA = document.createElement("a");
-        liveA.className = `sb-book-live-link ${idx === 3 ? "comix" : ""}`;
+        const themeClass = ["spark", "casa", "tvtrac", "comix"][idx] || "";
+        liveA.className = `sb-book-live-link ${themeClass}`;
         liveA.href = PAGES[idx].url;
         liveA.target = "_blank";
         liveA.rel = "noopener noreferrer";
