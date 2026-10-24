@@ -49,7 +49,6 @@ const ZOOM_MAX = 1.5;
 
 export default function SketchbookPortfolio() {
   const [idx, setIdx] = useState(0);
-  const [activeCaption, setActiveCaption] = useState(PAGES[0].title);
   const [hintGone, setHintGone] = useState(false);
 
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -211,14 +210,12 @@ export default function SketchbookPortfolio() {
       sb3dRef.current.style.setProperty("--t", "0");
       sb3dRef.current.style.setProperty("--shade", "0");
       sb3dRef.current.classList.remove("past-half");
-      setActiveCaption(PAGES[idx].title);
     } else {
       const next = turn.dir === "next";
       book.appendChild(halfEl("left", next ? turn.from : turn.to));
       book.appendChild(halfEl("right", next ? turn.to : turn.from));
       book.appendChild(buildLeaf(turn.dir, turn.from, turn.to));
       applyTurn(turn.t);
-      setActiveCaption(`${PAGES[turn.from].title} → ${PAGES[turn.to].title}`);
     }
 
     const prevZone = document.createElement("button");
@@ -759,13 +756,6 @@ export default function SketchbookPortfolio() {
                 />
               </svg>
             </button>
-          </div>
-
-          {/* Foot Captions */}
-          <div className="sb-foot">
-            <div className="sb-captions">
-              <p className="sb-caption">{activeCaption}</p>
-            </div>
           </div>
 
           <p className={`sb-hint ${hintGone ? "gone" : ""}`}>
