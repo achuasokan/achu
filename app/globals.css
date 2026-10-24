@@ -716,7 +716,7 @@ button {
   will-change: transform;
 }
 
-/* Touch click zones */
+/* Drag zones for page turning */
 .sb-zone {
   position: absolute;
   top: 0;
@@ -725,9 +725,13 @@ button {
   border: 0;
   background: transparent;
   padding: 0;
-  cursor: pointer;
+  cursor: grab;
   -webkit-tap-highlight-color: transparent;
   z-index: 5;
+}
+
+.sb-zone:active {
+  cursor: grabbing;
 }
 
 .sb-zone.sb-prev {
@@ -736,6 +740,30 @@ button {
 
 .sb-zone.sb-next {
   right: 0;
+}
+
+/* Clickable live link directly on the book's left page */
+.sb-book-live-link {
+  position: absolute;
+  left: 5%;
+  top: 81.2%;
+  width: 17%;
+  height: 4.7%;
+  z-index: 20;
+  cursor: pointer;
+  border-radius: 6px;
+  background: transparent;
+  text-decoration: none;
+  transition: background-color 0.2s ease, outline 0.2s ease;
+}
+
+.sb-book-live-link.comix {
+  width: 21.5%;
+}
+
+.sb-book-live-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* ---------------- Captions and Controls ---------------- */

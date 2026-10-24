@@ -76,66 +76,66 @@
   <circle cx="1000" cy="860" r="2.8" fill="#050508" opacity="0.9" />
 
   <!-- ================= LEFT SPREAD ================= -->
-  <g transform="translate(100, 75)">
-    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" font-weight="600">PLATE III · ENTERTAINMENT &amp; STREAMING ARCHITECTURE</text>
-    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" text-anchor="end">PRODUCTION SYSTEM · 2025</text>
-    <line x1="0" y1="38" x2="760" y2="38" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
-
-    <text x="0" y="98" class="serif-display" font-size="52" fill="#ffffff" letter-spacing="-0.01em">TVTrac</text>
-    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#c084fc">Streaming &amp; Watchlist Discovery Engine</text>
+  <g transform="translate(100, 65)">
+    <!-- Project Title & Subtitle -->
+    <text x="0" y="52" class="serif-display" font-size="62" fill="#ffffff" letter-spacing="-0.01em">TVTrac</text>
+    <text x="0" y="95" class="serif-display" font-style="italic" font-size="29" fill="#c084fc">Streaming &amp; Watchlist Discovery Engine</text>
 
     <!-- Tech Stack Badges -->
-    <g transform="translate(0, 162)">
-      <rect x="0" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="42" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Next.js 16</text>
-      <rect x="92" y="0" width="76" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="130" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">React 19</text>
-      <rect x="176" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="218" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">TMDB API</text>
-      <rect x="268" y="0" width="108" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="322" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Redux Toolkit</text>
-      <rect x="384" y="0" width="94" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="431" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">TailwindCSS</text>
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="94" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="47" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Next.js 16</text>
+      <rect x="104" y="0" width="86" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="147" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">React 19</text>
+      <rect x="200" y="0" width="94" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="247" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">TMDB API</text>
+      <rect x="304" y="0" width="112" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="360" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Redux Toolkit</text>
+      <rect x="426" y="0" width="104" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="478" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">TailwindCSS</text>
     </g>
 
     <!-- Narrative Description -->
-    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#b8b8c8">
+    <g transform="translate(0, 205)" class="serif-body" font-size="22" fill="#d2d2e2">
       <text x="0" y="0">TVTrac is an intelligent entertainment tracker engineered for real-time episode progress,</text>
-      <text x="0" y="30">watchlist synchronization, and algorithmic discovery across 800,000+ films and series.</text>
-      <text x="0" y="60">Powered by Next.js 16 App Router and TMDB REST endpoints, it provides seamless cached feeds,</text>
-      <text x="0" y="90">sub-second search responses, and granular season-by-season completion statistics.</text>
+      <text x="0" y="34">watchlist synchronization, and algorithmic discovery across 800,000+ films and series.</text>
+      <text x="0" y="68">Powered by Next.js 16 App Router and TMDB REST endpoints, it provides seamless cached feeds,</text>
+      <text x="0" y="102">sub-second search responses, and granular season-by-season completion statistics.</text>
     </g>
 
-    <line x1="0" y1="365" x2="760" y2="365" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    <line x1="0" y1="350" x2="760" y2="350" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.2" />
 
     <!-- Architectural Highlights -->
-    <g transform="translate(0, 400)">
-      <text x="0" y="0" class="mono-caps" font-size="11" fill="#dfb776" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
-      <g transform="translate(0, 28)">
-        <circle cx="5" cy="8" r="3" fill="#c084fc" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">High-Throughput TMDB Ingestion &amp; Cache</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Normalized client-side state caching with Redux Toolkit minimizing redundant network roundtrips.</text>
+    <g transform="translate(0, 385)">
+      <text x="0" y="0" class="mono-caps" font-size="13" fill="#dfb776" font-weight="700" letter-spacing="0.2em">KEY ARCHITECTURAL HIGHLIGHTS</text>
+      <g transform="translate(0, 34)">
+        <circle cx="5" cy="11" r="3.5" fill="#c084fc" />
+        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">High-Throughput TMDB Ingestion &amp; Cache</text>
+        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Normalized client-side state caching with Redux Toolkit minimizing network latency.</text>
       </g>
-      <g transform="translate(0, 88)">
-        <circle cx="5" cy="8" r="3" fill="#c084fc" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Granular Episode &amp; Season Progress Sync</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Instant toggle architecture logging watch status, air dates, and series progression milestones.</text>
+      <g transform="translate(0, 115)">
+        <circle cx="5" cy="11" r="3.5" fill="#c084fc" />
+        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Granular Episode &amp; Season Progress Sync</text>
+        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Instant toggle architecture logging watch status, air dates, and series milestones.</text>
       </g>
-      <g transform="translate(0, 148)">
-        <circle cx="5" cy="8" r="3" fill="#c084fc" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Dynamic Discovery &amp; Recommendation Engine</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Smart algorithmic filters matching user viewing history with genre tags and critical scores.</text>
+      <g transform="translate(0, 196)">
+        <circle cx="5" cy="11" r="3.5" fill="#c084fc" />
+        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Dynamic Discovery &amp; Recommendation Engine</text>
+        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Smart algorithmic filters matching user viewing history with genre tags and critical scores.</text>
       </g>
     </g>
 
-    <!-- Stamp -->
-    <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#c084fc" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
-      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#c084fc" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
-      <text x="82" y="42" class="mono-caps" font-size="8" fill="#c084fc" text-anchor="middle">FULL STACK VERIFIED</text>
-
-      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#ffffff">tvtrac.fun · Production System</text>
-      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#888899">tvtrac.fun · Live Platform</text>
+    <!-- Modern Architectural Live Link (No Stamp, Non-Pill Design) -->
+    <g transform="translate(0, 715)">
+      <line x1="0" y1="0" x2="760" y2="0" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.2" />
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="340" height="46" rx="6" fill="#14141d" stroke="#2e2e42" stroke-width="1.2" />
+        <circle cx="20" cy="23" r="4.5" fill="#22c55e" />
+        <text x="36" y="29" class="sans" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="0.02em">tvtrac.fun</text>
+        <rect x="180" y="11" width="108" height="24" rx="3" fill="#c084fc" fill-opacity="0.12" stroke="#c084fc" stroke-opacity="0.35" stroke-width="1" />
+        <text x="234" y="27" class="mono-caps" font-size="9.5" font-weight="700" fill="#c084fc" text-anchor="middle">LIVE PLATFORM</text>
+        <text x="312" y="29" class="sans" font-size="20" font-weight="600" fill="#c084fc">↗</text>
+      </g>
     </g>
   </g>
 

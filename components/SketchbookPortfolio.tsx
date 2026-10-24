@@ -7,6 +7,7 @@ interface PageData {
   title: string;
   place: string;
   tag: string;
+  url: string;
 }
 
 const PAGES: PageData[] = [
@@ -15,24 +16,28 @@ const PAGES: PageData[] = [
     title: "Spark — Real-time Dating Platform",
     place: "Next.js 16 · Socket.IO · Redux",
     tag: "Production System · 2025",
+    url: "https://spaark.fun",
   },
   {
     file: "/plates/plate2-casa.svg",
     title: "Casa Ananda — Luxury Resort Experience",
     place: "Next.js 16 · GSAP 3 · Lenis Scroll",
     tag: "Interactive Web Experience · 2025",
+    url: "https://casaananda.in",
   },
   {
     file: "/plates/plate3-tvtrac.svg",
     title: "TVTrac — Entertainment Tracking Engine",
     place: "Next.js 16 · TMDB API · Redux",
     tag: "Production System · 2025",
+    url: "https://tvtrac.fun",
   },
   {
     file: "/plates/plate4-comix.svg",
     title: "Comix — Digital Comic & Manga Reader",
     place: "React 19 · HTML5 Canvas · WebGL",
     tag: "Interactive Web Application · 2025",
+    url: "https://comix-3597.onrender.com",
   },
 ];
 
@@ -227,6 +232,17 @@ export default function SketchbookPortfolio() {
       im.alt = PAGES[idx].title;
       im.draggable = false;
       f.appendChild(im);
+
+      if (PAGES[idx].url) {
+        const liveA = document.createElement("a");
+        liveA.className = `sb-book-live-link ${idx === 3 ? "comix" : ""}`;
+        liveA.href = PAGES[idx].url;
+        liveA.target = "_blank";
+        liveA.rel = "noopener noreferrer";
+        liveA.title = `Visit live: ${PAGES[idx].url}`;
+        f.appendChild(liveA);
+      }
+
       book.appendChild(f);
       sb3dRef.current.style.setProperty("--shade", "0");
       setActiveCaption(PAGES[idx].title);
@@ -497,6 +513,7 @@ export default function SketchbookPortfolio() {
   const onStagePointerDown = (e: React.PointerEvent) => {
     if (e.button !== 0) return;
     const target = e.target as HTMLElement;
+    if (target.closest("a")) return;
     const onBook = target.closest(".sb-zone");
     if (!onBook || introOnRef.current || !bookRef.current) return;
     e.preventDefault();
@@ -541,8 +558,8 @@ export default function SketchbookPortfolio() {
     const turn = turnRef.current;
     if (!turn) return;
 
-    if (drag.moved < 6) {
-      commitTurn();
+    if (drag.moved < 15) {
+      cancelTurn();
       return;
     }
     const go = turn.t > 0.42 || drag.vel > 1.1;

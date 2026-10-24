@@ -76,66 +76,66 @@
   <circle cx="1000" cy="860" r="2.8" fill="#050508" opacity="0.9" />
 
   <!-- ================= LEFT SPREAD ================= -->
-  <g transform="translate(100, 75)">
-    <text x="0" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" font-weight="600">PLATE I · FULL-STACK WEB APPLICATION</text>
-    <text x="760" y="24" class="mono-caps" font-size="11.5" fill="#dfb776" text-anchor="end">PRODUCTION SYSTEM · 2025</text>
-    <line x1="0" y1="38" x2="760" y2="38" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
-
-    <text x="0" y="98" class="serif-display" font-size="52" fill="#ffffff" letter-spacing="-0.01em">Spark</text>
-    <text x="0" y="134" class="serif-display" font-style="italic" font-size="25" fill="#ff5277">Real-time Connection &amp; Matchmaking Engine</text>
+  <g transform="translate(100, 65)">
+    <!-- Project Title & Subtitle -->
+    <text x="0" y="52" class="serif-display" font-size="62" fill="#ffffff" letter-spacing="-0.01em">Spark</text>
+    <text x="0" y="95" class="serif-display" font-style="italic" font-size="29" fill="#ff5277">Real-time Connection &amp; Matchmaking Engine</text>
 
     <!-- Tech Stack Badges -->
-    <g transform="translate(0, 162)">
-      <rect x="0" y="0" width="84" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="42" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Next.js 16</text>
-      <rect x="92" y="0" width="76" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="130" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">React 19</text>
-      <rect x="176" y="0" width="80" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="216" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Socket.IO</text>
-      <rect x="264" y="0" width="98" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="313" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">Redux Toolkit</text>
-      <rect x="370" y="0" width="90" height="24" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.12" />
-      <text x="415" y="16" class="mono-caps" font-size="9" fill="#e4e4eb" text-anchor="middle">TailwindCSS</text>
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="94" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="47" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Next.js 16</text>
+      <rect x="104" y="0" width="86" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="147" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">React 19</text>
+      <rect x="200" y="0" width="92" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="246" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Socket.IO</text>
+      <rect x="302" y="0" width="112" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="358" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Redux Toolkit</text>
+      <rect x="424" y="0" width="104" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
+      <text x="476" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">TailwindCSS</text>
     </g>
 
     <!-- Narrative Description -->
-    <g transform="translate(0, 230)" class="serif-body" font-size="18.5" fill="#b8b8c8">
+    <g transform="translate(0, 205)" class="serif-body" font-size="22" fill="#d2d2e2">
       <text x="0" y="0">Spark is a modern, high-concurrency matchmaking platform engineered for instant</text>
-      <text x="0" y="30">sub-50ms message delivery, interactive profile discovery, and real-time user presence.</text>
-      <text x="0" y="60">Built on Next.js 16 App Router and React 19, the interface provides a frictionless</text>
-      <text x="0" y="90">experience with fluid Framer Motion transitions and persistent dark aesthetics.</text>
+      <text x="0" y="34">sub-50ms message delivery, interactive profile discovery, and real-time user presence.</text>
+      <text x="0" y="68">Built on Next.js 16 App Router and React 19, the interface provides a frictionless</text>
+      <text x="0" y="102">experience with fluid Framer Motion transitions and persistent dark aesthetics.</text>
     </g>
 
-    <line x1="0" y1="365" x2="760" y2="365" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    <line x1="0" y1="350" x2="760" y2="350" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.2" />
 
     <!-- Architectural Highlights -->
-    <g transform="translate(0, 400)">
-      <text x="0" y="0" class="mono-caps" font-size="11" fill="#dfb776" font-weight="600">KEY ARCHITECTURAL HIGHLIGHTS</text>
-      <g transform="translate(0, 28)">
-        <circle cx="5" cy="8" r="3" fill="#ff5277" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Full-Duplex Socket.IO Live Communication</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Instant bidirectional events for typing indicators, read receipts, and live matches.</text>
+    <g transform="translate(0, 385)">
+      <text x="0" y="0" class="mono-caps" font-size="13" fill="#dfb776" font-weight="700" letter-spacing="0.2em">KEY ARCHITECTURAL HIGHLIGHTS</text>
+      <g transform="translate(0, 34)">
+        <circle cx="5" cy="11" r="3.5" fill="#ff5277" />
+        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Full-Duplex Socket.IO Live Communication</text>
+        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Instant bidirectional events for typing indicators, read receipts, and live matches.</text>
       </g>
-      <g transform="translate(0, 88)">
-        <circle cx="5" cy="8" r="3" fill="#ff5277" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">Redux Toolkit Normalized State Cache</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Synchronized client cache for user profiles, conversations, and online presence.</text>
+      <g transform="translate(0, 115)">
+        <circle cx="5" cy="11" r="3.5" fill="#ff5277" />
+        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Redux Toolkit Normalized State Cache</text>
+        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Synchronized client cache for user profiles, conversations, and online presence.</text>
       </g>
-      <g transform="translate(0, 148)">
-        <circle cx="5" cy="8" r="3" fill="#ff5277" />
-        <text x="18" y="12" class="sans" font-size="14.5" font-weight="600" fill="#f4f4f7">OAuth &amp; Multi-Factor Authentication</text>
-        <text x="18" y="32" class="serif-body" font-size="15.5" fill="#9090a0">Secure JWT session storage, validation schemas with Zod and React Hook Form.</text>
+      <g transform="translate(0, 196)">
+        <circle cx="5" cy="11" r="3.5" fill="#ff5277" />
+        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">OAuth &amp; Multi-Factor Authentication</text>
+        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Secure JWT session storage, validation schemas with Zod and React Hook Form.</text>
       </g>
     </g>
 
-    <!-- Stamp -->
-    <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="165" height="58" rx="4" fill="none" stroke="#ff5277" stroke-width="1.8" stroke-dasharray="7 2" opacity="0.85" />
-      <text x="82" y="24" class="mono-caps" font-size="9.5" fill="#ff5277" text-anchor="middle" font-weight="700">ACHU ASOKAN</text>
-      <text x="82" y="42" class="mono-caps" font-size="8" fill="#ff5277" text-anchor="middle">FULL STACK VERIFIED</text>
-
-      <text x="190" y="28" class="serif-body" font-size="15" font-style="italic" fill="#ffffff">Crafted with Next.js 16, TypeScript, &amp; GSAP</text>
-      <text x="190" y="48" class="mono-caps" font-size="8.5" fill="#888899">spaark.fun · Live Deployment</text>
+    <!-- Modern Architectural Live Link (No Stamp, Non-Pill Design) -->
+    <g transform="translate(0, 715)">
+      <line x1="0" y1="0" x2="760" y2="0" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.2" />
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="340" height="46" rx="6" fill="#14141d" stroke="#2e2e42" stroke-width="1.2" />
+        <circle cx="20" cy="23" r="4.5" fill="#22c55e" />
+        <text x="36" y="29" class="sans" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="0.02em">spaark.fun</text>
+        <rect x="180" y="11" width="108" height="24" rx="3" fill="#ff5277" fill-opacity="0.12" stroke="#ff5277" stroke-opacity="0.35" stroke-width="1" />
+        <text x="234" y="27" class="mono-caps" font-size="9.5" font-weight="700" fill="#ff5277" text-anchor="middle">LIVE PLATFORM</text>
+        <text x="312" y="29" class="sans" font-size="20" font-weight="600" fill="#ff5277">↗</text>
+      </g>
     </g>
   </g>
 
