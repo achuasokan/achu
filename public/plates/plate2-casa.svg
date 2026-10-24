@@ -78,8 +78,8 @@
   <!-- ================= LEFT SPREAD ================= -->
   <g transform="translate(100, 65)">
     <!-- Project Title & Subtitle -->
-    <text x="0" y="52" class="serif-display" font-size="62" fill="#ffffff" letter-spacing="-0.01em">Casa Ananda</text>
-    <text x="0" y="95" class="serif-display" font-style="italic" font-size="28" fill="#38d38a">Luxury Resort Website</text>
+    <text x="0" y="48" class="serif-display" font-size="50" fill="#ffffff" letter-spacing="-0.01em">Casa Ananda</text>
+    <text x="0" y="90" class="serif-display" font-style="italic" font-size="28" fill="#38d38a">Luxury Resort Website</text>
 
     <!-- Tech Stack Badges -->
     <g transform="translate(0, 130)">

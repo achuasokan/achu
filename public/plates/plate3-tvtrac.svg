@@ -78,8 +78,8 @@
   <!-- ================= LEFT SPREAD ================= -->
   <g transform="translate(100, 65)">
     <!-- Project Title & Subtitle -->
-    <text x="0" y="52" class="serif-display" font-size="62" fill="#ffffff" letter-spacing="-0.01em">tvtrac.</text>
-    <text x="0" y="95" class="serif-display" font-style="italic" font-size="28" fill="#c084fc">Media Discovery &amp; Tracking Platform</text>
+    <text x="0" y="48" class="serif-display" font-size="50" fill="#ffffff" letter-spacing="-0.01em">tvtrac.</text>
+    <text x="0" y="90" class="serif-display" font-style="italic" font-size="28" fill="#c084fc">Media Discovery &amp; Tracking Platform</text>
 
     <!-- Tech Stack Badges -->
     <g transform="translate(0, 130)">

@@ -78,8 +78,8 @@
   <!-- ================= LEFT SPREAD ================= -->
   <g transform="translate(100, 65)">
     <!-- Project Title & Subtitle -->
-    <text x="0" y="52" class="serif-display" font-size="62" fill="#ffffff" letter-spacing="-0.01em">Comix</text>
-    <text x="0" y="95" class="serif-display" font-style="italic" font-size="28" fill="#f59e0b">Full-Stack Comic Book E-commerce Platform</text>
+    <text x="0" y="48" class="serif-display" font-size="50" fill="#ffffff" letter-spacing="-0.01em">Comix</text>
+    <text x="0" y="90" class="serif-display" font-style="italic" font-size="28" fill="#f59e0b">Full-Stack Comic Book E-commerce Platform</text>
 
     <!-- Tech Stack Badges -->
     <g transform="translate(0, 130)">
