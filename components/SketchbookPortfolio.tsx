@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
+import GetInTouch from "./GetInTouch";
 
 interface PageData {
   file: string;
@@ -563,8 +564,7 @@ export default function SketchbookPortfolio() {
         <nav>
           <a href="#about">About</a>
           <a href="#sketchbook">Sketchbook</a>
-          <a href="#plates">Plates</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Get in Touch</a>
           <div className="top-socials">
             {/* GitHub */}
             <a
@@ -580,7 +580,7 @@ export default function SketchbookPortfolio() {
             </a>
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/achuasokan"
+              href="https://www.linkedin.com/in/achu-a-4xd2y"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-btn"
@@ -591,7 +591,7 @@ export default function SketchbookPortfolio() {
               </svg>
             </a>
             {/* Email */}
-            <a href="mailto:achuasokan@gmail.com" className="icon-btn" aria-label="Email">
+            <a href="mailto:achuasokan.me@gmail.com" className="icon-btn" aria-label="Email">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
                 <rect x="2.4" y="4.6" width="19.2" height="14.8" rx="2.4" />
                 <path d="m3.2 6.4 8.8 6.6 8.8-6.6" />
@@ -612,7 +612,7 @@ export default function SketchbookPortfolio() {
               Achu Asokan is a full-stack engineer and web craftsman based in Kerala, India. Specializing
               in high-performance web applications, real-time architectures, and interactive digital
               experiences, he builds across{" "}
-              <a className="bio-link" href="#plates">
+              <a className="bio-link" href="#sketchbook">
                 Next.js 16, React 19, TypeScript, Node.js, and MongoDB
               </a>
               . From responsive real-time platforms like{" "}
@@ -764,48 +764,8 @@ export default function SketchbookPortfolio() {
         </div>
       </section>
 
-      {/* Painted watercolor divider */}
-      <div className="rule short" aria-hidden="true" />
-
-      {/* Plates Index */}
-      <section id="plates" className="plates">
-        <p className="section-label">P L A T E S</p>
-        <ol className="plate-list">
-          {PAGES.map((p, i) => (
-            <li key={i}>
-              <button
-                type="button"
-                className="plate"
-                aria-current={i === idx}
-                onClick={() => {
-                  goTo(i);
-                  document.getElementById("sketchbook")?.scrollIntoView({ behavior: "smooth", block: "center" });
-                }}
-              >
-                <span className="n">{String(i + 1).padStart(2, "0")}</span>
-                <span className="t">{p.title}</span>
-                <span className="p">{p.place}</span>
-              </button>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <div className="rule short" aria-hidden="true" />
-
-      {/* Footer / Contact */}
-      <footer className="foot" id="contact">
-        <p>
-          Kerala, India · Full Stack Developer ·{" "}
-          <a href="mailto:achuasokan@gmail.com" className="bio-link">
-            achuasokan@gmail.com
-          </a>{" "}
-          ·{" "}
-          <a href="tel:+918156836602" className="bio-link">
-            +91 8156836602
-          </a>
-        </p>
-      </footer>
+      {/* Get in Touch & Availability Hub (Replaces Plates & Merges Footer) */}
+      <GetInTouch />
     </>
   );
 }
