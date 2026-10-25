@@ -11,16 +11,15 @@ export default function GetInTouch() {
       <div className="dispatch-grid">
         {/* Left Column: Context, Direct Invitation & Status */}
         <div className="dispatch-intro">
-          <p className="section-label">C O N T A C T &nbsp; · &nbsp; G E T &nbsp; I N &nbsp; T O U C H</p>
+          <p className="section-label">G E T &nbsp; I N &nbsp; T O U C H</p>
           <h2 className="dispatch-title">
             Have a project in mind? <em>Let’s talk.</em>
           </h2>
           <p className="dispatch-desc">
-            I am currently open to software engineering opportunities, full-stack web
-            architecture, and creative technical collaborations.
+            Open to full-time software engineering roles, freelance projects, and new challenges worth taking on.
           </p>
           <p className="dispatch-subnote">
-            Based in Kerala, India — collaborating with engineering teams and founders worldwide.
+            Based in Kerala, India · Open to opportunities worldwide.
           </p>
         </div>
 
@@ -29,7 +28,7 @@ export default function GetInTouch() {
           <div className="dispatch-note-wrap">
             <span className="dispatch-gold-quote" aria-hidden="true">“</span>
             <p className="dispatch-note">
-              Feel free to connect directly through any channel below — whether for a new project, an engineering opportunity, or just a friendly conversation.
+              You can explore my work or get in touch directly through the links below.
             </p>
           </div>
 
@@ -127,10 +126,10 @@ export default function GetInTouch() {
       {/* Grounded Monograph Footer */}
       <footer className="contact-hub-footer">
         <p className="footer-credits">
-          Achu Asokan · Full Stack Developer &amp; Software Engineer · Kerala, India
+          Achu Asokan · Full Stack Developer · Kerala, India
         </p>
         <p className="footer-sub">
-          Crafted with Next.js 16, React 19 &amp; Tactile CSS 3D · &copy; 2026
+          © 2026 Achu Asokan
         </p>
       </footer>
     </section>

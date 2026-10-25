@@ -1073,8 +1073,8 @@ button {
 }
 
 .dispatch-desc {
-  font-size: clamp(15.5px, 1.3vw, 17px);
-  color: var(--ink-soft);
+  font-size: clamp(16px, 1.35vw, 17.5px);
+  color: #e2ded6;
   line-height: 1.7;
   margin-bottom: 14px;
 }
