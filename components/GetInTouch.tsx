@@ -240,7 +240,7 @@ export default function GetInTouch() {
           <span className="footer-secondary">Kerala, India</span>
         </p>
         <p className="footer-sub">
-          © 2026 Achu Asokan
+          © 2026
         </p>
       </footer>
     </section>
