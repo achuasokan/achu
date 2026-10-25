@@ -135,9 +135,10 @@ button {
 
 .top nav {
   display: flex;
-  gap: clamp(14px, 2vw, 26px);
-  font-size: 15px;
   align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 3.5vw, 22px);
+  font-size: 14.5px;
   letter-spacing: var(--track-nav);
   font-weight: 300;
 }
@@ -145,20 +146,12 @@ button {
 .top nav a {
   color: var(--ink-soft);
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .top nav a:hover,
 .top nav a[aria-current="true"] {
   color: var(--ink);
-}
-
-.top nav .top-socials {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  margin-left: 2px;
-  padding-left: clamp(12px, 1.6vw, 20px);
-  border-left: 1px solid var(--hairline);
 }
 
 .icon-btn {
