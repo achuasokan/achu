@@ -570,46 +570,35 @@ export default function SketchbookPortfolio() {
 
       {/* 1. Intro & About Section (Placed First) */}
       <section id="about" className="intro-about">
-        <p className="hero-kicker">Full Stack Developer / Software Engineer / Next.js &amp; MERN @ Kerala</p>
-
         <div className="about-wrap">
           <div className="about-content">
-            <p className="section-label">A B O U T</p>
-            <p className="bio">
-              Achu Asokan is a full-stack engineer and web craftsman based in Kerala, India. Specializing
-              in high-performance web applications, real-time architectures, and interactive digital
-              experiences, he builds across{" "}
-              <a className="bio-link" href="#projects">
-                Next.js 16, React 19, TypeScript, Node.js, and MongoDB
-              </a>
-              . From responsive real-time platforms like{" "}
-              <a
-                className="bio-link"
-                href="#projects"
-                onClick={(e) => {
-                  e.preventDefault();
-                  goTo(0);
-                  document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "center" });
-                }}
-              >
-                Spark
-              </a>{" "}
-              to immersive cinematic sites like{" "}
-              <a
-                className="bio-link"
-                href="#projects"
-                onClick={(e) => {
-                  e.preventDefault();
-                  goTo(1);
-                  document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "center" });
-                }}
-              >
-                Casa Ananda
-              </a>
-              , his work lives on the seam between technical rigor and visual craft: building software
-              that feels alive, tactile, and thoughtfully engineered. The interactive project showcase below captures selected
-              architectural plates and production interfaces looked at up close.
-            </p>
+            <p className="about-kicker">Software Engineer</p>
+            <h2 className="about-headline">
+              From concept to <em>creation.</em>
+            </h2>
+            <div className="bio-paras">
+              <p className="bio-para">
+                I’m Achu, a full-stack developer based in Kerala, working on web and mobile applications. I enjoy exploring new ideas, solving problems, and finding better ways to build things.
+              </p>
+              <p className="bio-para">
+                For me, the best digital experiences are the ones that feel simple to use but have a lot of thought behind them.
+              </p>
+            </div>
+
+            <div className="about-disciplines">
+              <div className="discipline-item">
+                <span className="discipline-title">Frontend &amp; Mobile</span>
+                <span className="discipline-techs">React · Next.js · Vue.js · TypeScript · TanStack Query · React Native · Expo</span>
+              </div>
+              <div className="discipline-item">
+                <span className="discipline-title">Backend &amp; Systems</span>
+                <span className="discipline-techs">Node.js · Express · NestJS · MongoDB · Docker · Socket.io</span>
+              </div>
+              <div className="discipline-item">
+                <span className="discipline-title">Areas of Work</span>
+                <span className="discipline-techs">Full Stack Web · Mobile Applications · UI/UX Design</span>
+              </div>
+            </div>
           </div>
           <div className="bloom-container">
             <img

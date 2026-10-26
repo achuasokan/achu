@@ -921,8 +921,14 @@ button {
   align-items: center;
 }
 
-.intro-about .hero-kicker {
-  margin-bottom: clamp(20px, 3vh, 30px);
+.about-kicker {
+  font-size: 11px;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--earth);
+  opacity: 0.88;
+  margin: 0 0 16px;
+  font-weight: 500;
 }
 
 .intro-about .hero-down {
@@ -962,28 +968,68 @@ button {
   margin-bottom: clamp(16px, 2.5vh, 28px);
 }
 
-.bio {
-  font-size: clamp(17px, 1.7vw, 20px);
+.about-headline {
+  font-family: var(--display);
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+  max-width: 30ch;
+}
+
+.about-headline em {
+  font-style: italic;
+  color: var(--earth);
+}
+
+.bio-paras {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bio-para {
+  font-size: clamp(16px, 1.5vw, 18px);
   line-height: 1.74;
   letter-spacing: 0.005em;
-  margin: 0;
   font-weight: 300;
-  max-width: 56ch;
   color: var(--ink-soft);
+  max-width: 55ch;
+  margin: 0;
 }
 
-.bio-link {
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: rgba(223, 183, 118, 0.45);
-  text-underline-offset: 4px;
-  transition: color 0.2s, text-decoration-color 0.2s;
-  cursor: pointer;
+.about-disciplines {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hairline);
+  max-width: 56ch;
 }
 
-.bio-link:hover {
+.discipline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.discipline-title {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--earth);
-  text-decoration-color: var(--earth);
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.discipline-techs {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .bloom-container {
@@ -1009,20 +1055,60 @@ button {
   border-radius: 1px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
+  .intro-about {
+    padding-top: clamp(88px, 12vh, 108px);
+    padding-bottom: 24px;
+    padding-inline: 20px;
+  }
 
-  .about-wrap,
-  .about {
-    grid-template-columns: 1fr;
-    gap: 32px;
+  .about-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-content {
+    display: contents;
+  }
+
+  .about-kicker {
+    order: 1;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .about-headline {
+    order: 2;
+    margin-bottom: 0;
+    text-align: center;
   }
 
   .bloom-container {
-    justify-self: center;
+    order: 3;
+    margin: 18px auto 26px;
+    align-self: center;
   }
 
   .bloom {
-    width: 170px;
+    width: clamp(140px, 40vw, 175px);
+  }
+
+  .bloom-line {
+    width: 160px;
+    margin-top: 8px;
+  }
+
+  .bio-paras {
+    order: 4;
+  }
+
+  .about-disciplines {
+    order: 5;
+    margin-top: 22px;
+    padding-top: 18px;
   }
 }
 
