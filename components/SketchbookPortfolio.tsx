@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
-import GetInTouch from "./GetInTouch";
-import About from "./About";
+
 
 interface PageData {
   file: string;
@@ -554,29 +553,7 @@ export default function SketchbookPortfolio() {
   };
 
   return (
-    <>
-      <div className="wash" aria-hidden="true" />
-
-      {/* Top Header Navigation */}
-      <header className="top">
-        <a className="name" href="#">
-          Achu Asokan
-        </a>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      {/* 1. Intro & About Section (Placed First) */}
-      <About />
-
-      {/* Painted watercolor divider */}
-      <div className="rule" aria-hidden="true" />
-
-      {/* 2. Interactive Tactile Sketchbook (Placed Down / Below) */}
-      <section id="projects" className="hero sketchbook-section">
+    <section id="projects" className="hero sketchbook-section">
         <img
           crossOrigin="anonymous"
           className="botany l"
@@ -656,9 +633,5 @@ export default function SketchbookPortfolio() {
           </p>
         </div>
       </section>
-
-      {/* Get in Touch & Availability Hub (Replaces Plates & Merges Footer) */}
-      <GetInTouch />
-    </>
   );
 }
