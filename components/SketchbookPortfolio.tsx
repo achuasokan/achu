@@ -640,29 +640,6 @@ export default function SketchbookPortfolio() {
             </div>
           </div>
         </div>
-
-        {/* Scroll cue down to Projects */}
-        <button
-          type="button"
-          className="hero-down"
-          aria-label="scroll down to projects"
-          onClick={() => {
-            document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            width="18"
-            height="18"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m6 9 6 6 6-6" />
-          </svg>
-        </button>
       </section>
 
       {/* Painted watercolor divider */}

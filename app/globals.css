@@ -931,14 +931,6 @@ button {
   font-weight: 500;
 }
 
-.intro-about .hero-down {
-  position: relative;
-  bottom: auto;
-  left: auto;
-  transform: none;
-  margin-top: clamp(18px, 2.8vh, 30px);
-}
-
 .about-wrap {
   width: 100%;
   display: grid;
