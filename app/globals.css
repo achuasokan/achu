@@ -209,10 +209,10 @@ button {
   position: relative;
   display: grid;
   justify-items: center;
-  align-content: center;
-  min-height: 100svh;
+  align-content: start;
+  min-height: auto;
   overflow-anchor: none;
-  padding: clamp(84px, 9svh, 118px) 0 clamp(40px, 5svh, 68px);
+  padding: clamp(24px, 4vh, 48px) 0 clamp(32px, 5vh, 56px);
 }
 
 .botany {
@@ -843,7 +843,8 @@ button {
 
 @media (max-width: 640px) {
   .hero {
-    padding: 88px 0 44px;
+    padding: 12px 0 16px;
+    min-height: auto;
   }
 
   .hero-kicker {
@@ -949,15 +950,15 @@ button {
   position: relative;
   display: grid;
   justify-items: center;
-  align-content: center;
-  min-height: 90svh;
+  align-content: start;
+  min-height: auto;
   overflow-anchor: none;
-  padding: clamp(20px, 4svh, 40px) 0 clamp(40px, 5svh, 70px);
+  padding: clamp(20px, 3vh, 36px) 0 clamp(24px, 4vh, 48px);
 }
 
 .sb-header-label {
   text-align: center;
-  margin-bottom: clamp(16px, 2.5vh, 28px);
+  margin-bottom: clamp(12px, 2vh, 20px);
 }
 
 .about-headline {
@@ -1061,7 +1062,7 @@ button {
 @media (max-width: 768px) {
   .intro-about {
     padding-top: clamp(88px, 12vh, 108px);
-    padding-bottom: 24px;
+    padding-bottom: 28px;
     padding-inline: 20px;
   }
 
@@ -1116,6 +1117,42 @@ button {
     order: 5;
     margin-top: 22px;
     padding-top: 18px;
+  }
+
+  /* Mobile spacing adjustments between About, Projects, and Get In Touch */
+  .sketchbook-section,
+  .hero.sketchbook-section {
+    min-height: auto !important;
+    padding: 12px 0 20px !important;
+  }
+
+  .sb-header-label {
+    margin-bottom: 38px !important;
+  }
+
+  .sb-header-label .section-label {
+    margin-bottom: 0 !important;
+  }
+
+  .sb-wrap {
+    gap: 16px !important;
+  }
+
+  .rule {
+    margin: 24px auto 20px !important;
+  }
+
+  .rule.short {
+    margin: 24px auto 24px !important;
+  }
+
+  .dispatch-section {
+    padding-top: 8px !important;
+  }
+
+  .dispatch-grid {
+    margin-block: 20px 30px !important;
+    gap: 26px !important;
   }
 }
 
