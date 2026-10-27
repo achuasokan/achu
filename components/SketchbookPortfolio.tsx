@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
+import MobileProjects from "./MobileProjects";
 
 
 interface PageData {
@@ -573,7 +574,8 @@ export default function SketchbookPortfolio() {
           <p className="section-label">P R O J E C T S</p>
         </div>
 
-        <div className="sb-wrap" ref={wrapRef}>
+        {/* Desktop & Tablet 3D Tactile Sketchbook (Hidden on Mobile) */}
+        <div className="sb-desktop-wrap sb-wrap" ref={wrapRef}>
           <div
             className="sb-stage"
             ref={stageRef}
@@ -631,6 +633,11 @@ export default function SketchbookPortfolio() {
           <p className={`sb-hint ${hintGone ? "gone" : ""}`}>
             drag page to turn · use arrow keys or chevron buttons
           </p>
+        </div>
+
+        {/* Dedicated Mobile Experience: Sticky Stacking Luxury Cards (Hidden on Desktop & Tablets) */}
+        <div className="sb-mobile-wrap">
+          <MobileProjects />
         </div>
       </section>
   );
