@@ -6,19 +6,21 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://achuasokan.fun';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Achu Asokan — Full Stack Developer & Software Engineer",
+    default: "Achu Asokan — Full Stack Software Engineer",
     template: "Achu Asokan | %s",
   },
   description:
-    "Portfolio of Achu Asokan, a Full Stack Developer and Software Engineer based in Kerala, India.",
+    "Building fast, modern web and mobile apps. Turning ideas into production-ready products for clients.",
   keywords: [
     "Achu Asokan",
     "Full Stack Developer",
     "Software Engineer",
+    "Full Stack Software Engineer",
     "Next.js Developer",
     "React Developer",
     "TypeScript Developer",
     "Node.js Developer",
+    "PostgreSQL",
     "Frontend Developer",
     "Web Developer Kerala",
     "Creative Developer",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
         url: "/achuasokan-opengraph.webp",
         width: 1200,
         height: 630,
-        alt: "Achu Asokan — Full Stack Developer & Software Engineer",
+        alt: "Achu Asokan — Full Stack Software Engineer",
       },
     ],
   },
@@ -90,16 +92,24 @@ const jsonLd = {
       "@type": "Person",
       "@id": `${SITE_URL}/#person`,
       name: "Achu Asokan",
-      jobTitle: "Full Stack Developer & Software Engineer",
+      jobTitle: "Full Stack Software Engineer",
       url: SITE_URL,
       image: `${SITE_URL}/achu.webp`,
+      email: "mailto:achuasokan.me@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        addressRegion: "Kerala",
+        addressCountry: "IN",
+      },
+      nationality: "Indian",
+      knowsLanguage: ["English", "Malayalam"],
       sameAs: [
         "https://github.com/achuasokan",
         "https://linkedin.com/in/achu-a-4xd2y",
         "https://instagram.com/achu.asokan",
       ],
       description:
-        "Full-stack developer and software engineer based in Kerala, India, building modern web and mobile applications.",
+        "Full-stack software engineer based in Kerala, India, building modern web and mobile applications.",
       knowsAbout: [
         "React",
         "Next.js",
@@ -108,23 +118,62 @@ const jsonLd = {
         "Express.js",
         "NestJS",
         "MongoDB",
+        "PostgreSQL",
         "Docker",
         "Full Stack Web Development",
         "Mobile Applications",
         "UI/UX Design",
       ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Engineering & Development Services",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Full Stack Web Application Development",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Mobile App Development",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "UI/UX & Frontend Engineering",
+            },
+          },
+        ],
+      },
     },
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: "Achu Asokan Portfolio",
+      name: "Achu Asokan",
+      inLanguage: "en-IN",
       description:
-        "Personal portfolio of Achu Asokan — Full Stack Developer specializing in Next.js, React, Node.js, TypeScript, and modern UI engineering.",
+        "Building fast, modern web and mobile apps. Turning ideas into production-ready products for clients.",
       image: `${SITE_URL}/achuasokan-opengraph.webp`,
       publisher: {
         "@id": `${SITE_URL}/#person`,
       },
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${SITE_URL}/#profilepage`,
+      url: SITE_URL,
+      name: "Achu Asokan — Full Stack Software Engineer",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      mainEntity: { "@id": `${SITE_URL}/#person` },
+      primaryImageOfPage: `${SITE_URL}/achuasokan-opengraph.webp`,
+      thumbnailUrl: `${SITE_URL}/achu.webp`,
     },
   ],
 };
