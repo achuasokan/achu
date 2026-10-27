@@ -1,17 +1,21 @@
+import Preloader from "@/components/Preloader";
 import About from "@/components/About";
 import SketchbookPortfolio from "@/components/SketchbookPortfolio";
 import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
   return (
-    <main className="page home">
+    <>
+      <Preloader />
+      <main className="page home">
       {/* Background paper texture */}
       <div className="wash" aria-hidden="true" />
 
       {/* Top Header Navigation */}
       <header className="top">
         <a className="name" href="#">
-          Achu Asokan
+          <span className="sig-white-text">Achu</span>{" "}
+          <span className="sig-gold-text">Asokan</span>
         </a>
         <nav>
           <a href="#about">About</a>
@@ -32,5 +36,6 @@ export default function Home() {
       {/* 3. Get in Touch & Availability Hub (Contact & Attribution Footer) */}
       <GetInTouch />
     </main>
+    </>
   );
 }

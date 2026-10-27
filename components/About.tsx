@@ -25,7 +25,7 @@ export default function About() {
             </div>
             <div className="discipline-item">
               <span className="discipline-title">Backend &amp; Systems</span>
-              <span className="discipline-techs">Node.js · Express · NestJS · MongoDB · Docker · Socket.io</span>
+              <span className="discipline-techs">Node.js · Express · NestJS · PostgreSQL · MongoDB · Docker · Socket.io</span>
             </div>
             <div className="discipline-item">
               <span className="discipline-title">Areas of Work</span>
