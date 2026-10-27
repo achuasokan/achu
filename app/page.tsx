@@ -14,7 +14,8 @@ export default function Home() {
       {/* Top Header Navigation */}
       <header className="top">
         <a className="name" href="#">
-          Achu Asokan
+          <span className="sig-white-text">Achu</span>{" "}
+          <span className="sig-gold-text">Asokan</span>
         </a>
         <nav>
           <a href="#about">About</a>

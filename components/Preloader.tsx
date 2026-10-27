@@ -13,11 +13,11 @@ export default function Preloader() {
     // ~1.8s signature draw & graceful brief hold, then trigger organic dissolve
     const exitTimer = setTimeout(() => {
       setIsExit(true);
-      document.body.style.overflow = "";
 
-      // Remove from DOM after dissolve finishes
+      // Remove from DOM after dissolve finishes, THEN restore scrolling (prevents scrollbar layout shake)
       setTimeout(() => {
         setIsMounted(false);
+        document.body.style.overflow = "";
       }, 750);
     }, 1800);
 
@@ -42,7 +42,10 @@ export default function Preloader() {
       <div className="sig-stage">
         {/* <p className="sig-kicker">Software Engineer</p> */}
 
-        <h1 className="sig-name">Achu Asokan</h1>
+        <h1 className="sig-name">
+          <span className="sig-white-text">Achu</span>{" "}
+          <span className="sig-gold-text">Asokan</span>
+        </h1>
 
         {/* The Signature Watercolor Hand-Drawn Stroke */}
         <div className="sig-svg-wrap" aria-hidden="true">
