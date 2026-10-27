@@ -6,9 +6,9 @@ export default function About() {
       <div className="about-wrap">
         <div className="about-content">
           <p className="about-kicker">Software Engineer</p>
-          <h2 className="about-headline">
+          <h1 className="about-headline">
             From concept to <em>creation.</em>
-          </h2>
+          </h1>
           <div className="bio-paras">
             <p className="bio-para">
               I’m Achu, a full-stack developer based in Kerala, working on web and mobile applications. I enjoy exploring new ideas, solving problems, and finding better ways to build things.
