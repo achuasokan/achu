@@ -1,10 +1,13 @@
+import Preloader from "@/components/Preloader";
 import About from "@/components/About";
 import SketchbookPortfolio from "@/components/SketchbookPortfolio";
 import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
   return (
-    <main className="page home">
+    <>
+      <Preloader />
+      <main className="page home">
       {/* Background paper texture */}
       <div className="wash" aria-hidden="true" />
 
@@ -32,5 +35,6 @@ export default function Home() {
       {/* 3. Get in Touch & Availability Hub (Contact & Attribution Footer) */}
       <GetInTouch />
     </main>
+    </>
   );
 }
