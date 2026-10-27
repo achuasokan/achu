@@ -350,8 +350,8 @@ button {
   position: relative;
   flex: 1 1;
   min-width: 0;
-  max-width: 1130px;
-  width: min(1130px, 91vw);
+  max-width: 1180px;
+  width: min(1180px, 92vw);
   perspective: 1800px;
   perspective-origin: 50% 46%;
 }
@@ -687,19 +687,31 @@ button {
 .sb-book-live-link {
   position: absolute;
   left: 5%;
-  top: 81.2%;
-  width: 18.75%;
-  height: 4.7%;
+  top: 80.2%;
+  width: 21.5%;
+  height: 5.5%;
   z-index: 20;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 8px;
   background: transparent;
   text-decoration: none;
-  transition: box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease;
+}
+
+.sb-book-live-link.spark {
+  width: 21.75%;
+}
+
+.sb-book-live-link.casa {
+  width: 22.8%;
+}
+
+.sb-book-live-link.tvtrac {
+  width: 21.75%;
 }
 
 .sb-book-live-link.comix {
-  width: 25%;
+  width: 28.3%;
 }
 
 .sb-book-live-link.spark:hover {

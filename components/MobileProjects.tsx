@@ -19,31 +19,31 @@ interface MobileProject {
 
 const MOBILE_PROJECTS: MobileProject[] = [
   {
-    id: "spark",
+    id: "tvtrac",
     num: "01",
-    title: "Spark",
-    subtitle: "Real-time Dating Platform",
+    title: "tvtrac.",
+    subtitle: "Media Discovery & Tracking Platform",
     tag: "Production System · 2025",
     description:
-      "Spark is a modern full-stack dating platform that enables users to discover profiles, connect through matching, and communicate in real time, delivering an interactive experience across the application.",
+      "tvtrac. is a full-stack Progressive Web App (PWA) for discovering, tracking, and organizing favorite TV shows and movies in one place, delivering an app-like experience across desktop and mobile devices.",
     highlights: [
       {
-        label: "Profile Discovery & Matching",
-        detail: "Explore user profiles and connect with potential matches based on shared interests and preferences.",
+        label: "Media Discovery",
+        detail: "Browse movies and TV shows using integrated media data.",
       },
       {
-        label: "Real-Time Messaging",
-        detail: "Enable instant communication between users through real-time chat functionality.",
+        label: "Personal Tracking",
+        detail: "Manage watched titles and personal watchlists in one place.",
       },
       {
-        label: "Interactive User Profiles",
-        detail: "Create and manage dating profiles with personal details, photos, and preferences.",
+        label: "Progressive Web App",
+        detail: "Designed as an installable PWA, bringing an app-like experience to devices.",
       },
     ],
-    tech: ["React", "TypeScript", "Node.js", "MongoDB"],
-    url: "https://spaark.fun",
-    domain: "spaark.fun",
-    image: "/Img/spark.webp",
+    tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "PWA"],
+    url: "https://tvtrac.fun",
+    domain: "tvtrac.fun",
+    image: "/Img/tvtrac.webp",
   },
   {
     id: "casa",
@@ -73,31 +73,31 @@ const MOBILE_PROJECTS: MobileProject[] = [
     image: "/Img/casa.webp",
   },
   {
-    id: "tvtrac",
+    id: "spark",
     num: "03",
-    title: "tvtrac.",
-    subtitle: "Media Discovery & Tracking Platform",
+    title: "Spark",
+    subtitle: "Real-time Dating Platform",
     tag: "Production System · 2025",
     description:
-      "tvtrac. is a full-stack Progressive Web App (PWA) for discovering, tracking, and organizing favorite TV shows and movies in one place, delivering an app-like experience across desktop and mobile devices.",
+      "Spark is a modern full-stack dating platform that enables users to discover profiles, connect through matching, and communicate in real time, delivering an interactive experience across the application.",
     highlights: [
       {
-        label: "Media Discovery",
-        detail: "Browse movies and TV shows using integrated media data.",
+        label: "Profile Discovery & Matching",
+        detail: "Explore user profiles and connect with potential matches based on shared interests and preferences.",
       },
       {
-        label: "Personal Tracking",
-        detail: "Manage watched titles and personal watchlists in one place.",
+        label: "Real-Time Messaging",
+        detail: "Enable instant communication between users through real-time chat functionality.",
       },
       {
-        label: "Progressive Web App",
-        detail: "Designed as an installable PWA, bringing an app-like experience to devices.",
+        label: "Interactive User Profiles",
+        detail: "Create and manage dating profiles with personal details, photos, and preferences.",
       },
     ],
-    tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "PWA"],
-    url: "https://tvtrac.fun",
-    domain: "tvtrac.fun",
-    image: "/Img/tvtrac.webp",
+    tech: ["React", "TypeScript", "Node.js", "MongoDB"],
+    url: "https://spaark.fun",
+    domain: "spaark.fun",
+    image: "/Img/spark.webp",
   },
   {
     id: "comix",

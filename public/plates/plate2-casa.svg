@@ -76,61 +76,62 @@
   <circle cx="1000" cy="860" r="2.8" fill="#050508" opacity="0.9" />
 
   <!-- ================= LEFT SPREAD ================= -->
-  <g transform="translate(100, 65)">
+  <g transform="translate(100, 60)">
     <!-- Project Title & Subtitle -->
-    <text x="0" y="48" class="serif-display" font-size="50" fill="#ffffff" letter-spacing="-0.01em">Casa Ananda</text>
-    <text x="0" y="90" class="serif-display" font-style="italic" font-size="28" fill="#38d38a">Luxury Resort Website</text>
+    <text x="0" y="46" class="serif-display" font-size="44" fill="#ffffff" letter-spacing="-0.01em">Casa Ananda</text>
+    <text x="0" y="92" class="serif-display" font-style="italic" font-size="30" fill="#38d38a">Luxury Resort Website</text>
 
     <!-- Tech Stack Badges -->
-    <g transform="translate(0, 130)">
-      <rect x="0" y="0" width="86" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
-      <text x="43" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Next.js</text>
-      <rect x="96" y="0" width="108" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
-      <text x="150" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">TypeScript</text>
-      <rect x="214" y="0" width="76" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
-      <text x="252" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">GSAP</text>
-      <rect x="300" y="0" width="76" height="28" rx="4" fill="#1c1c24" stroke="#ffffff" stroke-opacity="0.14" />
-      <text x="338" y="18" class="mono-caps" font-size="10.5" fill="#e4e4eb" text-anchor="middle">Lenis</text>
+    <g transform="translate(0, 126)">
+      <rect x="0" y="0" width="105" height="36" rx="6" fill="#22222f" stroke="#4a4a66" stroke-width="1.3" />
+      <text x="52.5" y="23" class="mono-caps" font-size="14" font-weight="700" fill="#f5f5ff" text-anchor="middle">Next.js</text>
+      <rect x="117" y="0" width="140" height="36" rx="6" fill="#22222f" stroke="#4a4a66" stroke-width="1.3" />
+      <text x="187" y="23" class="mono-caps" font-size="14" font-weight="700" fill="#f5f5ff" text-anchor="middle">TypeScript</text>
+      <rect x="269" y="0" width="94" height="36" rx="6" fill="#22222f" stroke="#4a4a66" stroke-width="1.3" />
+      <text x="316" y="23" class="mono-caps" font-size="14" font-weight="700" fill="#f5f5ff" text-anchor="middle">GSAP</text>
+      <rect x="375" y="0" width="94" height="36" rx="6" fill="#22222f" stroke="#4a4a66" stroke-width="1.3" />
+      <text x="422" y="23" class="mono-caps" font-size="14" font-weight="700" fill="#f5f5ff" text-anchor="middle">Lenis</text>
     </g>
 
     <!-- Narrative Description -->
-    <g transform="translate(0, 210)" class="serif-body" font-size="21" fill="#d2d2e2">
+    <g transform="translate(0, 206)" class="serif-body" font-size="24" fill="#e2e2f0">
       <text x="0" y="0">A cinematic website built for a luxury resort in Kerala, featuring immersive visuals,</text>
-      <text x="0" y="34">smooth scrolling, and interactive animations for an engaging browsing experience.</text>
+      <text x="0" y="38">smooth scrolling, and interactive animations for an engaging browsing experience.</text>
     </g>
 
-    <line x1="0" y1="290" x2="760" y2="290" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.2" />
+    <line x1="0" y1="298" x2="760" y2="298" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.2" />
 
     <!-- Project Highlights -->
-    <g transform="translate(0, 330)">
-      <text x="0" y="0" class="mono-caps" font-size="13" fill="#dfb776" font-weight="700" letter-spacing="0.2em">PROJECT HIGHLIGHTS</text>
-      <g transform="translate(0, 36)">
-        <circle cx="5" cy="11" r="3.5" fill="#38d38a" />
-        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Immersive Visual Design</text>
-        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Cinematic imagery, layered layouts, and smooth transitions.</text>
+    <g transform="translate(0, 338)">
+      <text x="0" y="0" class="mono-caps" font-size="15" fill="#dfb776" font-weight="700" letter-spacing="0.22em">PROJECT HIGHLIGHTS</text>
+      <g transform="translate(0, 38)">
+        <circle cx="6" cy="14" r="4.5" fill="#38d38a" />
+        <text x="24" y="20" class="sans" font-size="21.5" font-weight="700" fill="#ffffff">Immersive Visual Design</text>
+        <text x="24" y="50" class="serif-body" font-size="19.5" fill="#b4b4cc">Cinematic imagery, layered layouts, and smooth transitions.</text>
       </g>
-      <g transform="translate(0, 118)">
-        <circle cx="5" cy="11" r="3.5" fill="#38d38a" />
-        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Interactive Animations</text>
-        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Scroll-based effects and parallax movement using GSAP and Lenis.</text>
+      <g transform="translate(0, 130)">
+        <circle cx="6" cy="14" r="4.5" fill="#38d38a" />
+        <text x="24" y="20" class="sans" font-size="21.5" font-weight="700" fill="#ffffff">Interactive Animations</text>
+        <text x="24" y="50" class="serif-body" font-size="19.5" fill="#b4b4cc">Scroll-based effects and parallax movement using GSAP and Lenis.</text>
       </g>
-      <g transform="translate(0, 200)">
-        <circle cx="5" cy="11" r="3.5" fill="#38d38a" />
-        <text x="20" y="16" class="sans" font-size="18.5" font-weight="700" fill="#ffffff">Responsive Experience</text>
-        <text x="20" y="42" class="serif-body" font-size="17.5" fill="#a4a4b8">Layouts designed for desktop and mobile devices.</text>
+      <g transform="translate(0, 222)">
+        <circle cx="6" cy="14" r="4.5" fill="#38d38a" />
+        <text x="24" y="20" class="sans" font-size="21.5" font-weight="700" fill="#ffffff">Responsive Experience</text>
+        <text x="24" y="50" class="serif-body" font-size="19.5" fill="#b4b4cc">Layouts designed for desktop and mobile devices.</text>
       </g>
     </g>
 
     <!-- Modern Architectural Live Link -->
-    <g transform="translate(0, 715)">
-      <line x1="0" y1="0" x2="760" y2="0" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.2" />
-      <g transform="translate(0, 16)">
-        <rect x="0" y="0" width="375" height="46" rx="6" fill="#14141d" stroke="#2e2e42" stroke-width="1.2" />
-        <circle cx="20" cy="23" r="4.5" fill="#22c55e" />
-        <text x="36" y="29" class="sans" font-size="19" font-weight="700" fill="#ffffff" letter-spacing="0.02em">casaananda.in</text>
-        <rect x="176" y="11" width="150" height="24" rx="3" fill="#38d38a" fill-opacity="0.12" stroke="#38d38a" stroke-opacity="0.35" stroke-width="1" />
-        <text x="251" y="27" class="mono-caps" font-size="9" font-weight="700" fill="#38d38a" text-anchor="middle">VISIT LIVE WEBSITE</text>
-        <text x="345" y="29" class="sans" font-size="20" font-weight="600" fill="#38d38a">↗</text>
+    <g transform="translate(0, 726)">
+      <line x1="0" y1="-20" x2="760" y2="-20" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.2" />
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="455" height="54" rx="8" fill="#181824" stroke="#3d3d57" stroke-width="1.5" />
+        <circle cx="22" cy="27" r="8" fill="#22c55e" fill-opacity="0.22" />
+        <circle cx="22" cy="27" r="4.5" fill="#22c55e" />
+        <text x="42" y="35" class="sans" font-size="21.5" font-weight="700" fill="#ffffff" letter-spacing="0.02em">casaananda.in</text>
+        <rect x="200" y="9" width="235" height="36" rx="6" fill="#38d38a" fill-opacity="0.25" stroke="#38d38a" stroke-width="1.4" />
+        <text x="304" y="32" class="mono-caps" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.1em">VISIT LIVE WEBSITE</text>
+        <text x="414" y="34" class="sans" font-size="19" font-weight="700" fill="#5ee6a5">↗</text>
       </g>
     </g>
   </g>

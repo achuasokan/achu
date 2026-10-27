@@ -10,15 +10,17 @@ interface PageData {
   place: string;
   tag: string;
   url: string;
+  theme: "spark" | "casa" | "tvtrac" | "comix";
 }
 
 const PAGES: PageData[] = [
   {
-    file: "/plates/plate1-spark.svg",
-    title: "Spark — Real-time Dating Platform",
-    place: "React · TypeScript · Node.js · MongoDB",
+    file: "/plates/plate3-tvtrac.svg",
+    title: "tvtrac. — Media Discovery & Tracking Platform",
+    place: "Next.js · TypeScript · Node.js · MongoDB · PWA",
     tag: "Production System · 2025",
-    url: "https://spaark.fun",
+    url: "https://tvtrac.fun",
+    theme: "tvtrac",
   },
   {
     file: "/plates/plate2-casa.svg",
@@ -26,13 +28,15 @@ const PAGES: PageData[] = [
     place: "Next.js · TypeScript · GSAP · Lenis",
     tag: "Interactive Web Experience · 2025",
     url: "https://casaananda.in",
+    theme: "casa",
   },
   {
-    file: "/plates/plate3-tvtrac.svg",
-    title: "tvtrac. — Media Discovery & Tracking Platform",
-    place: "Next.js · TypeScript · Node.js · MongoDB · PWA",
+    file: "/plates/plate1-spark.svg",
+    title: "Spark — Real-time Dating Platform",
+    place: "React · TypeScript · Node.js · MongoDB",
     tag: "Production System · 2025",
-    url: "https://tvtrac.fun",
+    url: "https://spaark.fun",
+    theme: "spark",
   },
   {
     file: "/plates/plate4-comix.svg",
@@ -40,6 +44,7 @@ const PAGES: PageData[] = [
     place: "EJS · JavaScript · Node.js · Express.js · MongoDB",
     tag: "E-commerce Platform · 2025",
     url: "https://comix-3597.onrender.com",
+    theme: "comix",
   },
 ];
 
@@ -199,7 +204,7 @@ export default function SketchbookPortfolio() {
 
       if (PAGES[idx].url) {
         const liveA = document.createElement("a");
-        const themeClass = ["spark", "casa", "tvtrac", "comix"][idx] || "";
+        const themeClass = PAGES[idx].theme || "";
         liveA.className = `sb-book-live-link ${themeClass}`;
         liveA.href = PAGES[idx].url;
         liveA.target = "_blank";
